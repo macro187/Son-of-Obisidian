@@ -7,13 +7,13 @@ let g:colors_name="macrobsidian"
 
 
 hi Comment          guifg=#99AA8A   ctermfg=239
-hi Normal           guifg=#FFFFFF   ctermfg=250 guibg=#22282A   ctermbg=234
+hi Normal           guifg=#FFFFFF   ctermfg=250 guibg=#22282A   ctermbg=234 cterm=NONE
 "hi CursorLine       guibg=#32383A
 "hi CursorColumn     guibg=#32383A
 "hi Search           guibg=#808080
 hi Visual           guifg=#FFFFFF   ctermfg=250 guibg=#4F6164   ctermbg=66
 hi VisualNOS        guifg=#FFFFFF   ctermfg=250 guibg=#4F6164   ctermbg=66
-hi Identifier       guifg=#FFFFFF   ctermfg=250
+hi Identifier       guifg=#FFFFFF   ctermfg=250                             cterm=NONE
 hi Number           guifg=#FFCD22   ctermfg=227
 hi Operator         guifg=#E8E2B7   ctermfg=180
 hi String           guifg=#EC7600   ctermfg=208
