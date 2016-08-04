@@ -36,4 +36,9 @@ hi WarningMsg       guifg=#FFCD22   ctermfg=227
 hi Folded           guifg=#808080   ctermfg=244 guibg=#1C2325   ctermbg=234
 hi PMenu            guifg=#CCCCFF   ctermfg=147 guibg=#1C2325   ctermbg=234
 hi PMenuSel                                     guibg=#2C3335   ctermbg=234
+hi MatchParen                       ctermfg=250                 ctermbg=238
+hi ModeMsg                          ctermfg=239                 ctermbg=234
+hi TabLine                          ctermfg=237                 ctermbg=235 cterm=NONE
+hi TabLineFill                      ctermfg=237                 ctermbg=235 cterm=NONE
+hi TabLineSel                       ctermfg=243                 ctermbg=234 cterm=NONE
 
