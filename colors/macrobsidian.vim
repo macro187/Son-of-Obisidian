@@ -86,7 +86,7 @@ elseif &t_Co > 16
 " 8 Color Terminal
 "
 else
-    hi Normal           ctermfg=7       ctermbg=0       cterm=bold
+    hi Normal           ctermfg=7       ctermbg=0       cterm=NONE
     hi Comment          ctermfg=0                       cterm=bold
     hi TabLine          ctermfg=0       ctermbg=7       cterm=bold,reverse
     hi TabLineFill      ctermfg=0       ctermbg=7       cterm=bold,reverse
@@ -95,6 +95,14 @@ else
     hi NonText          ctermfg=0       ctermbg=0       cterm=bold
     hi ModeMsg          ctermfg=0       ctermbg=0       cterm=bold
     hi Visual                           ctermbg=4       cterm=bold
+    hi String           ctermfg=7                       cterm=bold
+    hi Identifier       ctermfg=6                       cterm=NONE
+    hi Number           ctermfg=3                       cterm=bold
+    hi Operator         ctermfg=2                       cterm=NONE
+    hi Statement        ctermfg=2                       cterm=NONE
+    hi Keyword          ctermfg=2                       cterm=NONE
+    hi Type             ctermfg=2                       cterm=bold
+    hi MatchParen       ctermfg=0       ctermbg=7       cterm=bold,reverse
 
 
 endif
