@@ -78,6 +78,8 @@ elseif &t_Co > 16
     hi TabLine          ctermfg=237     ctermbg=235     cterm=NONE
     hi TabLineFill      ctermfg=237     ctermbg=235     cterm=NONE
     hi TabLineSel       ctermfg=243     ctermbg=234     cterm=NONE
+    hi NonText          ctermfg=239
+    hi SpecialKey       ctermfg=239
 
 
 "
@@ -91,6 +93,7 @@ else
     hi TabLineSel       ctermfg=7       ctermbg=0       cterm=NONE
     hi LineNr           ctermfg=0       ctermbg=0       cterm=bold
     hi NonText          ctermfg=0       ctermbg=0       cterm=bold
+    hi SpecialKey       ctermfg=0       ctermbg=0       cterm=bold
     hi ModeMsg          ctermfg=0       ctermbg=0       cterm=bold
     hi Visual                           ctermbg=4       cterm=bold
     hi String           ctermfg=7                       cterm=bold
