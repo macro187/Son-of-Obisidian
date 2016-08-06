@@ -7,105 +7,615 @@ let g:colors_name="macrobsidian"
 
 
 "
-" GUI
+" 16 color terminal color combinations, defined for current terminal/gui
 "
+let BlackOnBlack = ' ctermfg=0 ctermbg=0 cterm=NONE'
+let BlackOnRed = ' ctermfg=0 ctermbg=1 cterm=NONE'
+let BlackOnGreen = ' ctermfg=0 ctermbg=2 cterm=NONE'
+let BlackOnYellow = ' ctermfg=0 ctermbg=3 cterm=NONE'
+let BlackOnBlue = ' ctermfg=0 ctermbg=4 cterm=NONE'
+let BlackOnMagenta = ' ctermfg=0 ctermbg=5 cterm=NONE'
+let BlackOnCyan = ' ctermfg=0 ctermbg=6 cterm=NONE'
+let BlackOnWhite = ' ctermfg=0 ctermbg=7 cterm=NONE'
+let RedOnBlack = ' ctermfg=1 ctermbg=0 cterm=NONE'
+let RedOnRed = ' ctermfg=1 ctermbg=1 cterm=NONE'
+let RedOnGreen = ' ctermfg=1 ctermbg=2 cterm=NONE'
+let RedOnYellow = ' ctermfg=1 ctermbg=3 cterm=NONE'
+let RedOnBlue = ' ctermfg=1 ctermbg=4 cterm=NONE'
+let RedOnMagenta = ' ctermfg=1 ctermbg=5 cterm=NONE'
+let RedOnCyan = ' ctermfg=1 ctermbg=6 cterm=NONE'
+let RedOnWhite = ' ctermfg=1 ctermbg=7 cterm=NONE'
+let GreenOnBlack = ' ctermfg=2 ctermbg=0 cterm=NONE'
+let GreenOnRed = ' ctermfg=2 ctermbg=1 cterm=NONE'
+let GreenOnGreen = ' ctermfg=2 ctermbg=2 cterm=NONE'
+let GreenOnYellow = ' ctermfg=2 ctermbg=3 cterm=NONE'
+let GreenOnBlue = ' ctermfg=2 ctermbg=4 cterm=NONE'
+let GreenOnMagenta = ' ctermfg=2 ctermbg=5 cterm=NONE'
+let GreenOnCyan = ' ctermfg=2 ctermbg=6 cterm=NONE'
+let GreenOnWhite = ' ctermfg=2 ctermbg=7 cterm=NONE'
+let YellowOnBlack = ' ctermfg=3 ctermbg=0 cterm=NONE'
+let YellowOnRed = ' ctermfg=3 ctermbg=1 cterm=NONE'
+let YellowOnGreen = ' ctermfg=3 ctermbg=2 cterm=NONE'
+let YellowOnYellow = ' ctermfg=3 ctermbg=3 cterm=NONE'
+let YellowOnBlue = ' ctermfg=3 ctermbg=4 cterm=NONE'
+let YellowOnMagenta = ' ctermfg=3 ctermbg=5 cterm=NONE'
+let YellowOnCyan = ' ctermfg=3 ctermbg=6 cterm=NONE'
+let YellowOnWhite = ' ctermfg=3 ctermbg=7 cterm=NONE'
+let BlueOnBlack = ' ctermfg=4 ctermbg=0 cterm=NONE'
+let BlueOnRed = ' ctermfg=4 ctermbg=1 cterm=NONE'
+let BlueOnGreen = ' ctermfg=4 ctermbg=2 cterm=NONE'
+let BlueOnYellow = ' ctermfg=4 ctermbg=3 cterm=NONE'
+let BlueOnBlue = ' ctermfg=4 ctermbg=4 cterm=NONE'
+let BlueOnMagenta = ' ctermfg=4 ctermbg=5 cterm=NONE'
+let BlueOnCyan = ' ctermfg=4 ctermbg=6 cterm=NONE'
+let BlueOnWhite = ' ctermfg=4 ctermbg=7 cterm=NONE'
+let MagentaOnBlack = ' ctermfg=5 ctermbg=0 cterm=NONE'
+let MagentaOnRed = ' ctermfg=5 ctermbg=1 cterm=NONE'
+let MagentaOnGreen = ' ctermfg=5 ctermbg=2 cterm=NONE'
+let MagentaOnYellow = ' ctermfg=5 ctermbg=3 cterm=NONE'
+let MagentaOnBlue = ' ctermfg=5 ctermbg=4 cterm=NONE'
+let MagentaOnMagenta = ' ctermfg=5 ctermbg=5 cterm=NONE'
+let MagentaOnCyan = ' ctermfg=5 ctermbg=6 cterm=NONE'
+let MagentaOnWhite = ' ctermfg=5 ctermbg=7 cterm=NONE'
+let CyanOnBlack = ' ctermfg=6 ctermbg=0 cterm=NONE'
+let CyanOnRed = ' ctermfg=6 ctermbg=1 cterm=NONE'
+let CyanOnGreen = ' ctermfg=6 ctermbg=2 cterm=NONE'
+let CyanOnYellow = ' ctermfg=6 ctermbg=3 cterm=NONE'
+let CyanOnBlue = ' ctermfg=6 ctermbg=4 cterm=NONE'
+let CyanOnMagenta = ' ctermfg=6 ctermbg=5 cterm=NONE'
+let CyanOnCyan = ' ctermfg=6 ctermbg=6 cterm=NONE'
+let CyanOnWhite = ' ctermfg=6 ctermbg=7 cterm=NONE'
+let WhiteOnBlack = ' ctermfg=7 ctermbg=0 cterm=NONE'
+let WhiteOnRed = ' ctermfg=7 ctermbg=1 cterm=NONE'
+let WhiteOnGreen = ' ctermfg=7 ctermbg=2 cterm=NONE'
+let WhiteOnYellow = ' ctermfg=7 ctermbg=3 cterm=NONE'
+let WhiteOnBlue = ' ctermfg=7 ctermbg=4 cterm=NONE'
+let WhiteOnMagenta = ' ctermfg=7 ctermbg=5 cterm=NONE'
+let WhiteOnCyan = ' ctermfg=7 ctermbg=6 cterm=NONE'
+let WhiteOnWhite = ' ctermfg=7 ctermbg=7 cterm=NONE'
+let LightBlackOnBlack = ' ctermfg=0 ctermbg=0 cterm=bold'
+let LightBlackOnRed = ' ctermfg=0 ctermbg=1 cterm=bold'
+let LightBlackOnGreen = ' ctermfg=0 ctermbg=2 cterm=bold'
+let LightBlackOnYellow = ' ctermfg=0 ctermbg=3 cterm=bold'
+let LightBlackOnBlue = ' ctermfg=0 ctermbg=4 cterm=bold'
+let LightBlackOnMagenta = ' ctermfg=0 ctermbg=5 cterm=bold'
+let LightBlackOnCyan = ' ctermfg=0 ctermbg=6 cterm=bold'
+let LightBlackOnWhite = ' ctermfg=0 ctermbg=7 cterm=bold'
+let LightRedOnBlack = ' ctermfg=1 ctermbg=0 cterm=bold'
+let LightRedOnRed = ' ctermfg=1 ctermbg=1 cterm=bold'
+let LightRedOnGreen = ' ctermfg=1 ctermbg=2 cterm=bold'
+let LightRedOnYellow = ' ctermfg=1 ctermbg=3 cterm=bold'
+let LightRedOnBlue = ' ctermfg=1 ctermbg=4 cterm=bold'
+let LightRedOnMagenta = ' ctermfg=1 ctermbg=5 cterm=bold'
+let LightRedOnCyan = ' ctermfg=1 ctermbg=6 cterm=bold'
+let LightRedOnWhite = ' ctermfg=1 ctermbg=7 cterm=bold'
+let LightGreenOnBlack = ' ctermfg=2 ctermbg=0 cterm=bold'
+let LightGreenOnRed = ' ctermfg=2 ctermbg=1 cterm=bold'
+let LightGreenOnGreen = ' ctermfg=2 ctermbg=2 cterm=bold'
+let LightGreenOnYellow = ' ctermfg=2 ctermbg=3 cterm=bold'
+let LightGreenOnBlue = ' ctermfg=2 ctermbg=4 cterm=bold'
+let LightGreenOnMagenta = ' ctermfg=2 ctermbg=5 cterm=bold'
+let LightGreenOnCyan = ' ctermfg=2 ctermbg=6 cterm=bold'
+let LightGreenOnWhite = ' ctermfg=2 ctermbg=7 cterm=bold'
+let LightYellowOnBlack = ' ctermfg=3 ctermbg=0 cterm=bold'
+let LightYellowOnRed = ' ctermfg=3 ctermbg=1 cterm=bold'
+let LightYellowOnGreen = ' ctermfg=3 ctermbg=2 cterm=bold'
+let LightYellowOnYellow = ' ctermfg=3 ctermbg=3 cterm=bold'
+let LightYellowOnBlue = ' ctermfg=3 ctermbg=4 cterm=bold'
+let LightYellowOnMagenta = ' ctermfg=3 ctermbg=5 cterm=bold'
+let LightYellowOnCyan = ' ctermfg=3 ctermbg=6 cterm=bold'
+let LightYellowOnWhite = ' ctermfg=3 ctermbg=7 cterm=bold'
+let LightBlueOnBlack = ' ctermfg=4 ctermbg=0 cterm=bold'
+let LightBlueOnRed = ' ctermfg=4 ctermbg=1 cterm=bold'
+let LightBlueOnGreen = ' ctermfg=4 ctermbg=2 cterm=bold'
+let LightBlueOnYellow = ' ctermfg=4 ctermbg=3 cterm=bold'
+let LightBlueOnBlue = ' ctermfg=4 ctermbg=4 cterm=bold'
+let LightBlueOnMagenta = ' ctermfg=4 ctermbg=5 cterm=bold'
+let LightBlueOnCyan = ' ctermfg=4 ctermbg=6 cterm=bold'
+let LightBlueOnWhite = ' ctermfg=4 ctermbg=7 cterm=bold'
+let LightMagentaOnBlack = ' ctermfg=5 ctermbg=0 cterm=bold'
+let LightMagentaOnRed = ' ctermfg=5 ctermbg=1 cterm=bold'
+let LightMagentaOnGreen = ' ctermfg=5 ctermbg=2 cterm=bold'
+let LightMagentaOnYellow = ' ctermfg=5 ctermbg=3 cterm=bold'
+let LightMagentaOnBlue = ' ctermfg=5 ctermbg=4 cterm=bold'
+let LightMagentaOnMagenta = ' ctermfg=5 ctermbg=5 cterm=bold'
+let LightMagentaOnCyan = ' ctermfg=5 ctermbg=6 cterm=bold'
+let LightMagentaOnWhite = ' ctermfg=5 ctermbg=7 cterm=bold'
+let LightCyanOnBlack = ' ctermfg=6 ctermbg=0 cterm=bold'
+let LightCyanOnRed = ' ctermfg=6 ctermbg=1 cterm=bold'
+let LightCyanOnGreen = ' ctermfg=6 ctermbg=2 cterm=bold'
+let LightCyanOnYellow = ' ctermfg=6 ctermbg=3 cterm=bold'
+let LightCyanOnBlue = ' ctermfg=6 ctermbg=4 cterm=bold'
+let LightCyanOnMagenta = ' ctermfg=6 ctermbg=5 cterm=bold'
+let LightCyanOnCyan = ' ctermfg=6 ctermbg=6 cterm=bold'
+let LightCyanOnWhite = ' ctermfg=6 ctermbg=7 cterm=bold'
+let LightWhiteOnBlack = ' ctermfg=7 ctermbg=0 cterm=bold'
+let LightWhiteOnRed = ' ctermfg=7 ctermbg=1 cterm=bold'
+let LightWhiteOnGreen = ' ctermfg=7 ctermbg=2 cterm=bold'
+let LightWhiteOnYellow = ' ctermfg=7 ctermbg=3 cterm=bold'
+let LightWhiteOnBlue = ' ctermfg=7 ctermbg=4 cterm=bold'
+let LightWhiteOnMagenta = ' ctermfg=7 ctermbg=5 cterm=bold'
+let LightWhiteOnCyan = ' ctermfg=7 ctermbg=6 cterm=bold'
+let LightWhiteOnWhite = ' ctermfg=7 ctermbg=7 cterm=bold'
+let BlackOnLightBlack = ' ctermfg=0 ctermbg=0 cterm=bold,reverse'
+let BlackOnLightRed = ' ctermfg=1 ctermbg=0 cterm=bold,reverse'
+let BlackOnLightGreen = ' ctermfg=2 ctermbg=0 cterm=bold,reverse'
+let BlackOnLightYellow = ' ctermfg=3 ctermbg=0 cterm=bold,reverse'
+let BlackOnLightBlue = ' ctermfg=4 ctermbg=0 cterm=bold,reverse'
+let BlackOnLightMagenta = ' ctermfg=5 ctermbg=0 cterm=bold,reverse'
+let BlackOnLightCyan = ' ctermfg=6 ctermbg=0 cterm=bold,reverse'
+let BlackOnLightWhite = ' ctermfg=7 ctermbg=0 cterm=bold,reverse'
+let RedOnLightBlack = ' ctermfg=0 ctermbg=1 cterm=bold,reverse'
+let RedOnLightRed = ' ctermfg=1 ctermbg=1 cterm=bold,reverse'
+let RedOnLightGreen = ' ctermfg=2 ctermbg=1 cterm=bold,reverse'
+let RedOnLightYellow = ' ctermfg=3 ctermbg=1 cterm=bold,reverse'
+let RedOnLightBlue = ' ctermfg=4 ctermbg=1 cterm=bold,reverse'
+let RedOnLightMagenta = ' ctermfg=5 ctermbg=1 cterm=bold,reverse'
+let RedOnLightCyan = ' ctermfg=6 ctermbg=1 cterm=bold,reverse'
+let RedOnLightWhite = ' ctermfg=7 ctermbg=1 cterm=bold,reverse'
+let GreenOnLightBlack = ' ctermfg=0 ctermbg=2 cterm=bold,reverse'
+let GreenOnLightRed = ' ctermfg=1 ctermbg=2 cterm=bold,reverse'
+let GreenOnLightGreen = ' ctermfg=2 ctermbg=2 cterm=bold,reverse'
+let GreenOnLightYellow = ' ctermfg=3 ctermbg=2 cterm=bold,reverse'
+let GreenOnLightBlue = ' ctermfg=4 ctermbg=2 cterm=bold,reverse'
+let GreenOnLightMagenta = ' ctermfg=5 ctermbg=2 cterm=bold,reverse'
+let GreenOnLightCyan = ' ctermfg=6 ctermbg=2 cterm=bold,reverse'
+let GreenOnLightWhite = ' ctermfg=7 ctermbg=2 cterm=bold,reverse'
+let YellowOnLightBlack = ' ctermfg=0 ctermbg=3 cterm=bold,reverse'
+let YellowOnLightRed = ' ctermfg=1 ctermbg=3 cterm=bold,reverse'
+let YellowOnLightGreen = ' ctermfg=2 ctermbg=3 cterm=bold,reverse'
+let YellowOnLightYellow = ' ctermfg=3 ctermbg=3 cterm=bold,reverse'
+let YellowOnLightBlue = ' ctermfg=4 ctermbg=3 cterm=bold,reverse'
+let YellowOnLightMagenta = ' ctermfg=5 ctermbg=3 cterm=bold,reverse'
+let YellowOnLightCyan = ' ctermfg=6 ctermbg=3 cterm=bold,reverse'
+let YellowOnLightWhite = ' ctermfg=7 ctermbg=3 cterm=bold,reverse'
+let BlueOnLightBlack = ' ctermfg=0 ctermbg=4 cterm=bold,reverse'
+let BlueOnLightRed = ' ctermfg=1 ctermbg=4 cterm=bold,reverse'
+let BlueOnLightGreen = ' ctermfg=2 ctermbg=4 cterm=bold,reverse'
+let BlueOnLightYellow = ' ctermfg=3 ctermbg=4 cterm=bold,reverse'
+let BlueOnLightBlue = ' ctermfg=4 ctermbg=4 cterm=bold,reverse'
+let BlueOnLightMagenta = ' ctermfg=5 ctermbg=4 cterm=bold,reverse'
+let BlueOnLightCyan = ' ctermfg=6 ctermbg=4 cterm=bold,reverse'
+let BlueOnLightWhite = ' ctermfg=7 ctermbg=4 cterm=bold,reverse'
+let MagentaOnLightBlack = ' ctermfg=0 ctermbg=5 cterm=bold,reverse'
+let MagentaOnLightRed = ' ctermfg=1 ctermbg=5 cterm=bold,reverse'
+let MagentaOnLightGreen = ' ctermfg=2 ctermbg=5 cterm=bold,reverse'
+let MagentaOnLightYellow = ' ctermfg=3 ctermbg=5 cterm=bold,reverse'
+let MagentaOnLightBlue = ' ctermfg=4 ctermbg=5 cterm=bold,reverse'
+let MagentaOnLightMagenta = ' ctermfg=5 ctermbg=5 cterm=bold,reverse'
+let MagentaOnLightCyan = ' ctermfg=6 ctermbg=5 cterm=bold,reverse'
+let MagentaOnLightWhite = ' ctermfg=7 ctermbg=5 cterm=bold,reverse'
+let CyanOnLightBlack = ' ctermfg=0 ctermbg=6 cterm=bold,reverse'
+let CyanOnLightRed = ' ctermfg=1 ctermbg=6 cterm=bold,reverse'
+let CyanOnLightGreen = ' ctermfg=2 ctermbg=6 cterm=bold,reverse'
+let CyanOnLightYellow = ' ctermfg=3 ctermbg=6 cterm=bold,reverse'
+let CyanOnLightBlue = ' ctermfg=4 ctermbg=6 cterm=bold,reverse'
+let CyanOnLightMagenta = ' ctermfg=5 ctermbg=6 cterm=bold,reverse'
+let CyanOnLightCyan = ' ctermfg=6 ctermbg=6 cterm=bold,reverse'
+let CyanOnLightWhite = ' ctermfg=7 ctermbg=6 cterm=bold,reverse'
+let WhiteOnLightBlack = ' ctermfg=0 ctermbg=7 cterm=bold,reverse'
+let WhiteOnLightRed = ' ctermfg=1 ctermbg=7 cterm=bold,reverse'
+let WhiteOnLightGreen = ' ctermfg=2 ctermbg=7 cterm=bold,reverse'
+let WhiteOnLightYellow = ' ctermfg=3 ctermbg=7 cterm=bold,reverse'
+let WhiteOnLightBlue = ' ctermfg=4 ctermbg=7 cterm=bold,reverse'
+let WhiteOnLightMagenta = ' ctermfg=5 ctermbg=7 cterm=bold,reverse'
+let WhiteOnLightCyan = ' ctermfg=6 ctermbg=7 cterm=bold,reverse'
+let WhiteOnLightWhite = ' ctermfg=7 ctermbg=7 cterm=bold,reverse'
+if &t_Co > 16
+let LightBlackOnBlack = ' ctermfg=8 ctermbg=0 cterm=NONE'
+let LightBlackOnRed = ' ctermfg=8 ctermbg=1 cterm=NONE'
+let LightBlackOnGreen = ' ctermfg=8 ctermbg=2 cterm=NONE'
+let LightBlackOnYellow = ' ctermfg=8 ctermbg=3 cterm=NONE'
+let LightBlackOnBlue = ' ctermfg=8 ctermbg=4 cterm=NONE'
+let LightBlackOnMagenta = ' ctermfg=8 ctermbg=5 cterm=NONE'
+let LightBlackOnCyan = ' ctermfg=8 ctermbg=6 cterm=NONE'
+let LightBlackOnWhite = ' ctermfg=8 ctermbg=7 cterm=NONE'
+let LightRedOnBlack = ' ctermfg=9 ctermbg=0 cterm=NONE'
+let LightRedOnRed = ' ctermfg=9 ctermbg=1 cterm=NONE'
+let LightRedOnGreen = ' ctermfg=9 ctermbg=2 cterm=NONE'
+let LightRedOnYellow = ' ctermfg=9 ctermbg=3 cterm=NONE'
+let LightRedOnBlue = ' ctermfg=9 ctermbg=4 cterm=NONE'
+let LightRedOnMagenta = ' ctermfg=9 ctermbg=5 cterm=NONE'
+let LightRedOnCyan = ' ctermfg=9 ctermbg=6 cterm=NONE'
+let LightRedOnWhite = ' ctermfg=9 ctermbg=7 cterm=NONE'
+let LightGreenOnBlack = ' ctermfg=10 ctermbg=0 cterm=NONE'
+let LightGreenOnRed = ' ctermfg=10 ctermbg=1 cterm=NONE'
+let LightGreenOnGreen = ' ctermfg=10 ctermbg=2 cterm=NONE'
+let LightGreenOnYellow = ' ctermfg=10 ctermbg=3 cterm=NONE'
+let LightGreenOnBlue = ' ctermfg=10 ctermbg=4 cterm=NONE'
+let LightGreenOnMagenta = ' ctermfg=10 ctermbg=5 cterm=NONE'
+let LightGreenOnCyan = ' ctermfg=10 ctermbg=6 cterm=NONE'
+let LightGreenOnWhite = ' ctermfg=10 ctermbg=7 cterm=NONE'
+let LightYellowOnBlack = ' ctermfg=11 ctermbg=0 cterm=NONE'
+let LightYellowOnRed = ' ctermfg=11 ctermbg=1 cterm=NONE'
+let LightYellowOnGreen = ' ctermfg=11 ctermbg=2 cterm=NONE'
+let LightYellowOnYellow = ' ctermfg=11 ctermbg=3 cterm=NONE'
+let LightYellowOnBlue = ' ctermfg=11 ctermbg=4 cterm=NONE'
+let LightYellowOnMagenta = ' ctermfg=11 ctermbg=5 cterm=NONE'
+let LightYellowOnCyan = ' ctermfg=11 ctermbg=6 cterm=NONE'
+let LightYellowOnWhite = ' ctermfg=11 ctermbg=7 cterm=NONE'
+let LightBlueOnBlack = ' ctermfg=12 ctermbg=0 cterm=NONE'
+let LightBlueOnRed = ' ctermfg=12 ctermbg=1 cterm=NONE'
+let LightBlueOnGreen = ' ctermfg=12 ctermbg=2 cterm=NONE'
+let LightBlueOnYellow = ' ctermfg=12 ctermbg=3 cterm=NONE'
+let LightBlueOnBlue = ' ctermfg=12 ctermbg=4 cterm=NONE'
+let LightBlueOnMagenta = ' ctermfg=12 ctermbg=5 cterm=NONE'
+let LightBlueOnCyan = ' ctermfg=12 ctermbg=6 cterm=NONE'
+let LightBlueOnWhite = ' ctermfg=12 ctermbg=7 cterm=NONE'
+let LightMagentaOnBlack = ' ctermfg=13 ctermbg=0 cterm=NONE'
+let LightMagentaOnRed = ' ctermfg=13 ctermbg=1 cterm=NONE'
+let LightMagentaOnGreen = ' ctermfg=13 ctermbg=2 cterm=NONE'
+let LightMagentaOnYellow = ' ctermfg=13 ctermbg=3 cterm=NONE'
+let LightMagentaOnBlue = ' ctermfg=13 ctermbg=4 cterm=NONE'
+let LightMagentaOnMagenta = ' ctermfg=13 ctermbg=5 cterm=NONE'
+let LightMagentaOnCyan = ' ctermfg=13 ctermbg=6 cterm=NONE'
+let LightMagentaOnWhite = ' ctermfg=13 ctermbg=7 cterm=NONE'
+let LightCyanOnBlack = ' ctermfg=14 ctermbg=0 cterm=NONE'
+let LightCyanOnRed = ' ctermfg=14 ctermbg=1 cterm=NONE'
+let LightCyanOnGreen = ' ctermfg=14 ctermbg=2 cterm=NONE'
+let LightCyanOnYellow = ' ctermfg=14 ctermbg=3 cterm=NONE'
+let LightCyanOnBlue = ' ctermfg=14 ctermbg=4 cterm=NONE'
+let LightCyanOnMagenta = ' ctermfg=14 ctermbg=5 cterm=NONE'
+let LightCyanOnCyan = ' ctermfg=14 ctermbg=6 cterm=NONE'
+let LightCyanOnWhite = ' ctermfg=14 ctermbg=7 cterm=NONE'
+let LightWhiteOnBlack = ' ctermfg=15 ctermbg=0 cterm=NONE'
+let LightWhiteOnRed = ' ctermfg=15 ctermbg=1 cterm=NONE'
+let LightWhiteOnGreen = ' ctermfg=15 ctermbg=2 cterm=NONE'
+let LightWhiteOnYellow = ' ctermfg=15 ctermbg=3 cterm=NONE'
+let LightWhiteOnBlue = ' ctermfg=15 ctermbg=4 cterm=NONE'
+let LightWhiteOnMagenta = ' ctermfg=15 ctermbg=5 cterm=NONE'
+let LightWhiteOnCyan = ' ctermfg=15 ctermbg=6 cterm=NONE'
+let LightWhiteOnWhite = ' ctermfg=15 ctermbg=7 cterm=NONE'
+let BlackOnLightBlack = ' ctermfg=0 ctermbg=8 cterm=NONE'
+let BlackOnLightRed = ' ctermfg=0 ctermbg=9 cterm=NONE'
+let BlackOnLightGreen = ' ctermfg=0 ctermbg=10 cterm=NONE'
+let BlackOnLightYellow = ' ctermfg=0 ctermbg=11 cterm=NONE'
+let BlackOnLightBlue = ' ctermfg=0 ctermbg=12 cterm=NONE'
+let BlackOnLightMagenta = ' ctermfg=0 ctermbg=13 cterm=NONE'
+let BlackOnLightCyan = ' ctermfg=0 ctermbg=14 cterm=NONE'
+let BlackOnLightWhite = ' ctermfg=0 ctermbg=15 cterm=NONE'
+let RedOnLightBlack = ' ctermfg=1 ctermbg=8 cterm=NONE'
+let RedOnLightRed = ' ctermfg=1 ctermbg=9 cterm=NONE'
+let RedOnLightGreen = ' ctermfg=1 ctermbg=10 cterm=NONE'
+let RedOnLightYellow = ' ctermfg=1 ctermbg=11 cterm=NONE'
+let RedOnLightBlue = ' ctermfg=1 ctermbg=12 cterm=NONE'
+let RedOnLightMagenta = ' ctermfg=1 ctermbg=13 cterm=NONE'
+let RedOnLightCyan = ' ctermfg=1 ctermbg=14 cterm=NONE'
+let RedOnLightWhite = ' ctermfg=1 ctermbg=15 cterm=NONE'
+let GreenOnLightBlack = ' ctermfg=2 ctermbg=8 cterm=NONE'
+let GreenOnLightRed = ' ctermfg=2 ctermbg=9 cterm=NONE'
+let GreenOnLightGreen = ' ctermfg=2 ctermbg=10 cterm=NONE'
+let GreenOnLightYellow = ' ctermfg=2 ctermbg=11 cterm=NONE'
+let GreenOnLightBlue = ' ctermfg=2 ctermbg=12 cterm=NONE'
+let GreenOnLightMagenta = ' ctermfg=2 ctermbg=13 cterm=NONE'
+let GreenOnLightCyan = ' ctermfg=2 ctermbg=14 cterm=NONE'
+let GreenOnLightWhite = ' ctermfg=2 ctermbg=15 cterm=NONE'
+let YellowOnLightBlack = ' ctermfg=3 ctermbg=8 cterm=NONE'
+let YellowOnLightRed = ' ctermfg=3 ctermbg=9 cterm=NONE'
+let YellowOnLightGreen = ' ctermfg=3 ctermbg=10 cterm=NONE'
+let YellowOnLightYellow = ' ctermfg=3 ctermbg=11 cterm=NONE'
+let YellowOnLightBlue = ' ctermfg=3 ctermbg=12 cterm=NONE'
+let YellowOnLightMagenta = ' ctermfg=3 ctermbg=13 cterm=NONE'
+let YellowOnLightCyan = ' ctermfg=3 ctermbg=14 cterm=NONE'
+let YellowOnLightWhite = ' ctermfg=3 ctermbg=15 cterm=NONE'
+let BlueOnLightBlack = ' ctermfg=4 ctermbg=8 cterm=NONE'
+let BlueOnLightRed = ' ctermfg=4 ctermbg=9 cterm=NONE'
+let BlueOnLightGreen = ' ctermfg=4 ctermbg=10 cterm=NONE'
+let BlueOnLightYellow = ' ctermfg=4 ctermbg=11 cterm=NONE'
+let BlueOnLightBlue = ' ctermfg=4 ctermbg=12 cterm=NONE'
+let BlueOnLightMagenta = ' ctermfg=4 ctermbg=13 cterm=NONE'
+let BlueOnLightCyan = ' ctermfg=4 ctermbg=14 cterm=NONE'
+let BlueOnLightWhite = ' ctermfg=4 ctermbg=15 cterm=NONE'
+let MagentaOnLightBlack = ' ctermfg=5 ctermbg=8 cterm=NONE'
+let MagentaOnLightRed = ' ctermfg=5 ctermbg=9 cterm=NONE'
+let MagentaOnLightGreen = ' ctermfg=5 ctermbg=10 cterm=NONE'
+let MagentaOnLightYellow = ' ctermfg=5 ctermbg=11 cterm=NONE'
+let MagentaOnLightBlue = ' ctermfg=5 ctermbg=12 cterm=NONE'
+let MagentaOnLightMagenta = ' ctermfg=5 ctermbg=13 cterm=NONE'
+let MagentaOnLightCyan = ' ctermfg=5 ctermbg=14 cterm=NONE'
+let MagentaOnLightWhite = ' ctermfg=5 ctermbg=15 cterm=NONE'
+let CyanOnLightBlack = ' ctermfg=6 ctermbg=8 cterm=NONE'
+let CyanOnLightRed = ' ctermfg=6 ctermbg=9 cterm=NONE'
+let CyanOnLightGreen = ' ctermfg=6 ctermbg=10 cterm=NONE'
+let CyanOnLightYellow = ' ctermfg=6 ctermbg=11 cterm=NONE'
+let CyanOnLightBlue = ' ctermfg=6 ctermbg=12 cterm=NONE'
+let CyanOnLightMagenta = ' ctermfg=6 ctermbg=13 cterm=NONE'
+let CyanOnLightCyan = ' ctermfg=6 ctermbg=14 cterm=NONE'
+let CyanOnLightWhite = ' ctermfg=6 ctermbg=15 cterm=NONE'
+let WhiteOnLightBlack = ' ctermfg=7 ctermbg=8 cterm=NONE'
+let WhiteOnLightRed = ' ctermfg=7 ctermbg=9 cterm=NONE'
+let WhiteOnLightGreen = ' ctermfg=7 ctermbg=10 cterm=NONE'
+let WhiteOnLightYellow = ' ctermfg=7 ctermbg=11 cterm=NONE'
+let WhiteOnLightBlue = ' ctermfg=7 ctermbg=12 cterm=NONE'
+let WhiteOnLightMagenta = ' ctermfg=7 ctermbg=13 cterm=NONE'
+let WhiteOnLightCyan = ' ctermfg=7 ctermbg=14 cterm=NONE'
+let WhiteOnLightWhite = ' ctermfg=7 ctermbg=15 cterm=NONE'
+endif
 if has("gui_running")
-    hi Comment          guifg=#99AA8A
-    hi Normal           guifg=#FFFFFF   guibg=#22282A   cterm=NONE
-    hi Visual           guifg=#FFFFFF   guibg=#4F6164
-    hi VisualNOS        guifg=#FFFFFF   guibg=#4F6164
-    hi Identifier       guifg=#FFFFFF                   cterm=NONE
-    hi Number           guifg=#FFCD22
-    hi Operator         guifg=#E8E2B7
-    hi String           guifg=#EC7600
-    hi FoldColumn       guifg=#FFFFFF   guibg=#394144
-    hi LineNr           guifg=#3F4E49   guibg=#293134
-    hi PreProc          guifg=#A082BD
-    hi Keyword          guifg=#93C763
-    hi Conditional      guifg=#93C763
-    hi Statement        guifg=#93C763
-    hi Type             guifg=#93C763
-    hi Structure        guifg=#678CB1
-    hi Tag              guifg=#93C763
-    hi xmlTagName       guifg=#93C763
-    hi xmlCdata         guifg=#99A38A
-    hi xmlAttrib        guifg=#678CB1
-    hi htmlTagName      guifg=#93C763
-    hi htmlArg          guifg=#678CB1
-    hi ErrorMsg         guifg=#FF0000
-    hi WarningMsg       guifg=#FFCD22
-    hi Folded           guifg=#808080   guibg=#1C2325
-    hi PMenu            guifg=#CCCCFF   guibg=#1C2325
-    hi PMenuSel                         guibg=#2C3335
-    hi TabLine                                          cterm=NONE
-    hi TabLineFill                                      cterm=NONE
-    hi TabLineSel                                       cterm=NONE
-
-
-"
-" 256 Color Terminal
-"
-elseif &t_Co > 16
-    hi Comment          ctermfg=239
-    hi Normal           ctermfg=250     ctermbg=234     cterm=NONE
-    hi Visual           ctermfg=250     ctermbg=66
-    hi VisualNOS        ctermfg=250     ctermbg=66
-    hi Identifier       ctermfg=250                     cterm=NONE
-    hi Number           ctermfg=227
-    hi Operator         ctermfg=180
-    hi String           ctermfg=208
-    hi FoldColumn       ctermfg=250     ctermbg=238
-    hi LineNr           ctermfg=237     ctermbg=235
-    hi PreProc          ctermfg=97
-    hi Keyword          ctermfg=71
-    hi Conditional      ctermfg=71
-    hi Statement        ctermfg=71
-    hi Type             ctermfg=71
-    hi Structure        ctermfg=68
-    hi Tag              ctermfg=71
-    hi xmlTagName       ctermfg=71
-    hi xmlCdata         ctermfg=107
-    hi xmlAttrib        ctermfg=68
-    hi htmlTagName      ctermfg=71
-    hi htmlArg          ctermfg=68
-    hi ErrorMsg         ctermfg=9
-    hi WarningMsg       ctermfg=227
-    hi Folded           ctermfg=244     ctermbg=234
-    hi PMenu            ctermfg=147     ctermbg=234
-    hi PMenuSel                         ctermbg=234
-    hi MatchParen       ctermfg=250     ctermbg=238
-    hi ModeMsg          ctermfg=239     ctermbg=234
-    hi TabLine          ctermfg=237     ctermbg=235     cterm=NONE
-    hi TabLineFill      ctermfg=237     ctermbg=235     cterm=NONE
-    hi TabLineSel       ctermfg=243     ctermbg=234     cterm=NONE
-    hi NonText          ctermfg=239
-    hi SpecialKey       ctermfg=239
-
-
-"
-" 8 Color Terminal
-"
-else
-    hi Normal           ctermfg=7       ctermbg=0       cterm=NONE
-    hi Comment          ctermfg=0                       cterm=bold
-    hi TabLine          ctermfg=0       ctermbg=7       cterm=bold,reverse
-    hi TabLineFill      ctermfg=0       ctermbg=7       cterm=bold,reverse
-    hi TabLineSel       ctermfg=7       ctermbg=0       cterm=NONE
-    hi LineNr           ctermfg=0       ctermbg=0       cterm=bold
-    hi NonText          ctermfg=0       ctermbg=0       cterm=bold
-    hi SpecialKey       ctermfg=0       ctermbg=0       cterm=bold
-    hi ModeMsg          ctermfg=0       ctermbg=0       cterm=bold
-    hi Visual                           ctermbg=4       cterm=bold
-    hi String           ctermfg=7                       cterm=bold
-    hi Identifier       ctermfg=6                       cterm=NONE
-    hi Number           ctermfg=3                       cterm=bold
-    hi Operator         ctermfg=2                       cterm=NONE
-    hi Statement        ctermfg=2                       cterm=NONE
-    hi Keyword          ctermfg=2                       cterm=NONE
-    hi Type             ctermfg=2                       cterm=bold
-    hi MatchParen       ctermfg=0       ctermbg=7       cterm=bold,reverse
-
-
+let BlackOnBlack = ' guifg=#000000 guibg=#000000 gui=NONE'
+let BlackOnRed = ' guifg=#000000 guibg=#800000 gui=NONE'
+let BlackOnGreen = ' guifg=#000000 guibg=#008000 gui=NONE'
+let BlackOnYellow = ' guifg=#000000 guibg=#808000 gui=NONE'
+let BlackOnBlue = ' guifg=#000000 guibg=#000080 gui=NONE'
+let BlackOnMagenta = ' guifg=#000000 guibg=#800080 gui=NONE'
+let BlackOnCyan = ' guifg=#000000 guibg=#008080 gui=NONE'
+let BlackOnWhite = ' guifg=#000000 guibg=#C0C0C0 gui=NONE'
+let RedOnBlack = ' guifg=#800000 guibg=#000000 gui=NONE'
+let RedOnRed = ' guifg=#800000 guibg=#800000 gui=NONE'
+let RedOnGreen = ' guifg=#800000 guibg=#008000 gui=NONE'
+let RedOnYellow = ' guifg=#800000 guibg=#808000 gui=NONE'
+let RedOnBlue = ' guifg=#800000 guibg=#000080 gui=NONE'
+let RedOnMagenta = ' guifg=#800000 guibg=#800080 gui=NONE'
+let RedOnCyan = ' guifg=#800000 guibg=#008080 gui=NONE'
+let RedOnWhite = ' guifg=#800000 guibg=#C0C0C0 gui=NONE'
+let GreenOnBlack = ' guifg=#008000 guibg=#000000 gui=NONE'
+let GreenOnRed = ' guifg=#008000 guibg=#800000 gui=NONE'
+let GreenOnGreen = ' guifg=#008000 guibg=#008000 gui=NONE'
+let GreenOnYellow = ' guifg=#008000 guibg=#808000 gui=NONE'
+let GreenOnBlue = ' guifg=#008000 guibg=#000080 gui=NONE'
+let GreenOnMagenta = ' guifg=#008000 guibg=#800080 gui=NONE'
+let GreenOnCyan = ' guifg=#008000 guibg=#008080 gui=NONE'
+let GreenOnWhite = ' guifg=#008000 guibg=#C0C0C0 gui=NONE'
+let YellowOnBlack = ' guifg=#808000 guibg=#000000 gui=NONE'
+let YellowOnRed = ' guifg=#808000 guibg=#800000 gui=NONE'
+let YellowOnGreen = ' guifg=#808000 guibg=#008000 gui=NONE'
+let YellowOnYellow = ' guifg=#808000 guibg=#808000 gui=NONE'
+let YellowOnBlue = ' guifg=#808000 guibg=#000080 gui=NONE'
+let YellowOnMagenta = ' guifg=#808000 guibg=#800080 gui=NONE'
+let YellowOnCyan = ' guifg=#808000 guibg=#008080 gui=NONE'
+let YellowOnWhite = ' guifg=#808000 guibg=#C0C0C0 gui=NONE'
+let BlueOnBlack = ' guifg=#000080 guibg=#000000 gui=NONE'
+let BlueOnRed = ' guifg=#000080 guibg=#800000 gui=NONE'
+let BlueOnGreen = ' guifg=#000080 guibg=#008000 gui=NONE'
+let BlueOnYellow = ' guifg=#000080 guibg=#808000 gui=NONE'
+let BlueOnBlue = ' guifg=#000080 guibg=#000080 gui=NONE'
+let BlueOnMagenta = ' guifg=#000080 guibg=#800080 gui=NONE'
+let BlueOnCyan = ' guifg=#000080 guibg=#008080 gui=NONE'
+let BlueOnWhite = ' guifg=#000080 guibg=#C0C0C0 gui=NONE'
+let MagentaOnBlack = ' guifg=#800080 guibg=#000000 gui=NONE'
+let MagentaOnRed = ' guifg=#800080 guibg=#800000 gui=NONE'
+let MagentaOnGreen = ' guifg=#800080 guibg=#008000 gui=NONE'
+let MagentaOnYellow = ' guifg=#800080 guibg=#808000 gui=NONE'
+let MagentaOnBlue = ' guifg=#800080 guibg=#000080 gui=NONE'
+let MagentaOnMagenta = ' guifg=#800080 guibg=#800080 gui=NONE'
+let MagentaOnCyan = ' guifg=#800080 guibg=#008080 gui=NONE'
+let MagentaOnWhite = ' guifg=#800080 guibg=#C0C0C0 gui=NONE'
+let CyanOnBlack = ' guifg=#008080 guibg=#000000 gui=NONE'
+let CyanOnRed = ' guifg=#008080 guibg=#800000 gui=NONE'
+let CyanOnGreen = ' guifg=#008080 guibg=#008000 gui=NONE'
+let CyanOnYellow = ' guifg=#008080 guibg=#808000 gui=NONE'
+let CyanOnBlue = ' guifg=#008080 guibg=#000080 gui=NONE'
+let CyanOnMagenta = ' guifg=#008080 guibg=#800080 gui=NONE'
+let CyanOnCyan = ' guifg=#008080 guibg=#008080 gui=NONE'
+let CyanOnWhite = ' guifg=#008080 guibg=#C0C0C0 gui=NONE'
+let WhiteOnBlack = ' guifg=#C0C0C0 guibg=#000000 gui=NONE'
+let WhiteOnRed = ' guifg=#C0C0C0 guibg=#800000 gui=NONE'
+let WhiteOnGreen = ' guifg=#C0C0C0 guibg=#008000 gui=NONE'
+let WhiteOnYellow = ' guifg=#C0C0C0 guibg=#808000 gui=NONE'
+let WhiteOnBlue = ' guifg=#C0C0C0 guibg=#000080 gui=NONE'
+let WhiteOnMagenta = ' guifg=#C0C0C0 guibg=#800080 gui=NONE'
+let WhiteOnCyan = ' guifg=#C0C0C0 guibg=#008080 gui=NONE'
+let WhiteOnWhite = ' guifg=#C0C0C0 guibg=#C0C0C0 gui=NONE'
+let LightBlackOnBlack = ' guifg=#808080 guibg=#000000 gui=NONE'
+let LightBlackOnRed = ' guifg=#808080 guibg=#800000 gui=NONE'
+let LightBlackOnGreen = ' guifg=#808080 guibg=#008000 gui=NONE'
+let LightBlackOnYellow = ' guifg=#808080 guibg=#808000 gui=NONE'
+let LightBlackOnBlue = ' guifg=#808080 guibg=#000080 gui=NONE'
+let LightBlackOnMagenta = ' guifg=#808080 guibg=#800080 gui=NONE'
+let LightBlackOnCyan = ' guifg=#808080 guibg=#008080 gui=NONE'
+let LightBlackOnWhite = ' guifg=#808080 guibg=#C0C0C0 gui=NONE'
+let LightRedOnBlack = ' guifg=#FF0000 guibg=#000000 gui=NONE'
+let LightRedOnRed = ' guifg=#FF0000 guibg=#800000 gui=NONE'
+let LightRedOnGreen = ' guifg=#FF0000 guibg=#008000 gui=NONE'
+let LightRedOnYellow = ' guifg=#FF0000 guibg=#808000 gui=NONE'
+let LightRedOnBlue = ' guifg=#FF0000 guibg=#000080 gui=NONE'
+let LightRedOnMagenta = ' guifg=#FF0000 guibg=#800080 gui=NONE'
+let LightRedOnCyan = ' guifg=#FF0000 guibg=#008080 gui=NONE'
+let LightRedOnWhite = ' guifg=#FF0000 guibg=#C0C0C0 gui=NONE'
+let LightGreenOnBlack = ' guifg=#00FF00 guibg=#000000 gui=NONE'
+let LightGreenOnRed = ' guifg=#00FF00 guibg=#800000 gui=NONE'
+let LightGreenOnGreen = ' guifg=#00FF00 guibg=#008000 gui=NONE'
+let LightGreenOnYellow = ' guifg=#00FF00 guibg=#808000 gui=NONE'
+let LightGreenOnBlue = ' guifg=#00FF00 guibg=#000080 gui=NONE'
+let LightGreenOnMagenta = ' guifg=#00FF00 guibg=#800080 gui=NONE'
+let LightGreenOnCyan = ' guifg=#00FF00 guibg=#008080 gui=NONE'
+let LightGreenOnWhite = ' guifg=#00FF00 guibg=#C0C0C0 gui=NONE'
+let LightYellowOnBlack = ' guifg=#FFFF00 guibg=#000000 gui=NONE'
+let LightYellowOnRed = ' guifg=#FFFF00 guibg=#800000 gui=NONE'
+let LightYellowOnGreen = ' guifg=#FFFF00 guibg=#008000 gui=NONE'
+let LightYellowOnYellow = ' guifg=#FFFF00 guibg=#808000 gui=NONE'
+let LightYellowOnBlue = ' guifg=#FFFF00 guibg=#000080 gui=NONE'
+let LightYellowOnMagenta = ' guifg=#FFFF00 guibg=#800080 gui=NONE'
+let LightYellowOnCyan = ' guifg=#FFFF00 guibg=#008080 gui=NONE'
+let LightYellowOnWhite = ' guifg=#FFFF00 guibg=#C0C0C0 gui=NONE'
+let LightBlueOnBlack = ' guifg=#0000FF guibg=#000000 gui=NONE'
+let LightBlueOnRed = ' guifg=#0000FF guibg=#800000 gui=NONE'
+let LightBlueOnGreen = ' guifg=#0000FF guibg=#008000 gui=NONE'
+let LightBlueOnYellow = ' guifg=#0000FF guibg=#808000 gui=NONE'
+let LightBlueOnBlue = ' guifg=#0000FF guibg=#000080 gui=NONE'
+let LightBlueOnMagenta = ' guifg=#0000FF guibg=#800080 gui=NONE'
+let LightBlueOnCyan = ' guifg=#0000FF guibg=#008080 gui=NONE'
+let LightBlueOnWhite = ' guifg=#0000FF guibg=#C0C0C0 gui=NONE'
+let LightMagentaOnBlack = ' guifg=#FF00FF guibg=#000000 gui=NONE'
+let LightMagentaOnRed = ' guifg=#FF00FF guibg=#800000 gui=NONE'
+let LightMagentaOnGreen = ' guifg=#FF00FF guibg=#008000 gui=NONE'
+let LightMagentaOnYellow = ' guifg=#FF00FF guibg=#808000 gui=NONE'
+let LightMagentaOnBlue = ' guifg=#FF00FF guibg=#000080 gui=NONE'
+let LightMagentaOnMagenta = ' guifg=#FF00FF guibg=#800080 gui=NONE'
+let LightMagentaOnCyan = ' guifg=#FF00FF guibg=#008080 gui=NONE'
+let LightMagentaOnWhite = ' guifg=#FF00FF guibg=#C0C0C0 gui=NONE'
+let LightCyanOnBlack = ' guifg=#00FFFF guibg=#000000 gui=NONE'
+let LightCyanOnRed = ' guifg=#00FFFF guibg=#800000 gui=NONE'
+let LightCyanOnGreen = ' guifg=#00FFFF guibg=#008000 gui=NONE'
+let LightCyanOnYellow = ' guifg=#00FFFF guibg=#808000 gui=NONE'
+let LightCyanOnBlue = ' guifg=#00FFFF guibg=#000080 gui=NONE'
+let LightCyanOnMagenta = ' guifg=#00FFFF guibg=#800080 gui=NONE'
+let LightCyanOnCyan = ' guifg=#00FFFF guibg=#008080 gui=NONE'
+let LightCyanOnWhite = ' guifg=#00FFFF guibg=#C0C0C0 gui=NONE'
+let LightWhiteOnBlack = ' guifg=#FFFFFF guibg=#000000 gui=NONE'
+let LightWhiteOnRed = ' guifg=#FFFFFF guibg=#800000 gui=NONE'
+let LightWhiteOnGreen = ' guifg=#FFFFFF guibg=#008000 gui=NONE'
+let LightWhiteOnYellow = ' guifg=#FFFFFF guibg=#808000 gui=NONE'
+let LightWhiteOnBlue = ' guifg=#FFFFFF guibg=#000080 gui=NONE'
+let LightWhiteOnMagenta = ' guifg=#FFFFFF guibg=#800080 gui=NONE'
+let LightWhiteOnCyan = ' guifg=#FFFFFF guibg=#008080 gui=NONE'
+let LightWhiteOnWhite = ' guifg=#FFFFFF guibg=#C0C0C0 gui=NONE'
+let BlackOnLightBlack = ' guifg=#000000 guibg=#808080 gui=NONE'
+let BlackOnLightRed = ' guifg=#000000 guibg=#FF0000 gui=NONE'
+let BlackOnLightGreen = ' guifg=#000000 guibg=#00FF00 gui=NONE'
+let BlackOnLightYellow = ' guifg=#000000 guibg=#FFFF00 gui=NONE'
+let BlackOnLightBlue = ' guifg=#000000 guibg=#0000FF gui=NONE'
+let BlackOnLightMagenta = ' guifg=#000000 guibg=#FF00FF gui=NONE'
+let BlackOnLightCyan = ' guifg=#000000 guibg=#00FFFF gui=NONE'
+let BlackOnLightWhite = ' guifg=#000000 guibg=#FFFFFF gui=NONE'
+let RedOnLightBlack = ' guifg=#800000 guibg=#808080 gui=NONE'
+let RedOnLightRed = ' guifg=#800000 guibg=#FF0000 gui=NONE'
+let RedOnLightGreen = ' guifg=#800000 guibg=#00FF00 gui=NONE'
+let RedOnLightYellow = ' guifg=#800000 guibg=#FFFF00 gui=NONE'
+let RedOnLightBlue = ' guifg=#800000 guibg=#0000FF gui=NONE'
+let RedOnLightMagenta = ' guifg=#800000 guibg=#FF00FF gui=NONE'
+let RedOnLightCyan = ' guifg=#800000 guibg=#00FFFF gui=NONE'
+let RedOnLightWhite = ' guifg=#800000 guibg=#FFFFFF gui=NONE'
+let GreenOnLightBlack = ' guifg=#008000 guibg=#808080 gui=NONE'
+let GreenOnLightRed = ' guifg=#008000 guibg=#FF0000 gui=NONE'
+let GreenOnLightGreen = ' guifg=#008000 guibg=#00FF00 gui=NONE'
+let GreenOnLightYellow = ' guifg=#008000 guibg=#FFFF00 gui=NONE'
+let GreenOnLightBlue = ' guifg=#008000 guibg=#0000FF gui=NONE'
+let GreenOnLightMagenta = ' guifg=#008000 guibg=#FF00FF gui=NONE'
+let GreenOnLightCyan = ' guifg=#008000 guibg=#00FFFF gui=NONE'
+let GreenOnLightWhite = ' guifg=#008000 guibg=#FFFFFF gui=NONE'
+let YellowOnLightBlack = ' guifg=#808000 guibg=#808080 gui=NONE'
+let YellowOnLightRed = ' guifg=#808000 guibg=#FF0000 gui=NONE'
+let YellowOnLightGreen = ' guifg=#808000 guibg=#00FF00 gui=NONE'
+let YellowOnLightYellow = ' guifg=#808000 guibg=#FFFF00 gui=NONE'
+let YellowOnLightBlue = ' guifg=#808000 guibg=#0000FF gui=NONE'
+let YellowOnLightMagenta = ' guifg=#808000 guibg=#FF00FF gui=NONE'
+let YellowOnLightCyan = ' guifg=#808000 guibg=#00FFFF gui=NONE'
+let YellowOnLightWhite = ' guifg=#808000 guibg=#FFFFFF gui=NONE'
+let BlueOnLightBlack = ' guifg=#000080 guibg=#808080 gui=NONE'
+let BlueOnLightRed = ' guifg=#000080 guibg=#FF0000 gui=NONE'
+let BlueOnLightGreen = ' guifg=#000080 guibg=#00FF00 gui=NONE'
+let BlueOnLightYellow = ' guifg=#000080 guibg=#FFFF00 gui=NONE'
+let BlueOnLightBlue = ' guifg=#000080 guibg=#0000FF gui=NONE'
+let BlueOnLightMagenta = ' guifg=#000080 guibg=#FF00FF gui=NONE'
+let BlueOnLightCyan = ' guifg=#000080 guibg=#00FFFF gui=NONE'
+let BlueOnLightWhite = ' guifg=#000080 guibg=#FFFFFF gui=NONE'
+let MagentaOnLightBlack = ' guifg=#800080 guibg=#808080 gui=NONE'
+let MagentaOnLightRed = ' guifg=#800080 guibg=#FF0000 gui=NONE'
+let MagentaOnLightGreen = ' guifg=#800080 guibg=#00FF00 gui=NONE'
+let MagentaOnLightYellow = ' guifg=#800080 guibg=#FFFF00 gui=NONE'
+let MagentaOnLightBlue = ' guifg=#800080 guibg=#0000FF gui=NONE'
+let MagentaOnLightMagenta = ' guifg=#800080 guibg=#FF00FF gui=NONE'
+let MagentaOnLightCyan = ' guifg=#800080 guibg=#00FFFF gui=NONE'
+let MagentaOnLightWhite = ' guifg=#800080 guibg=#FFFFFF gui=NONE'
+let CyanOnLightBlack = ' guifg=#008080 guibg=#808080 gui=NONE'
+let CyanOnLightRed = ' guifg=#008080 guibg=#FF0000 gui=NONE'
+let CyanOnLightGreen = ' guifg=#008080 guibg=#00FF00 gui=NONE'
+let CyanOnLightYellow = ' guifg=#008080 guibg=#FFFF00 gui=NONE'
+let CyanOnLightBlue = ' guifg=#008080 guibg=#0000FF gui=NONE'
+let CyanOnLightMagenta = ' guifg=#008080 guibg=#FF00FF gui=NONE'
+let CyanOnLightCyan = ' guifg=#008080 guibg=#00FFFF gui=NONE'
+let CyanOnLightWhite = ' guifg=#008080 guibg=#FFFFFF gui=NONE'
+let WhiteOnLightBlack = ' guifg=#C0C0C0 guibg=#808080 gui=NONE'
+let WhiteOnLightRed = ' guifg=#C0C0C0 guibg=#FF0000 gui=NONE'
+let WhiteOnLightGreen = ' guifg=#C0C0C0 guibg=#00FF00 gui=NONE'
+let WhiteOnLightYellow = ' guifg=#C0C0C0 guibg=#FFFF00 gui=NONE'
+let WhiteOnLightBlue = ' guifg=#C0C0C0 guibg=#0000FF gui=NONE'
+let WhiteOnLightMagenta = ' guifg=#C0C0C0 guibg=#FF00FF gui=NONE'
+let WhiteOnLightCyan = ' guifg=#C0C0C0 guibg=#00FFFF gui=NONE'
+let WhiteOnLightWhite = ' guifg=#C0C0C0 guibg=#FFFFFF gui=NONE'
 endif
 
+
+"
+" 16 Color Terminal
+"
+exe 'hi Normal'         . WhiteOnBlack
+exe 'hi Comment'        . LightBlackOnBlack
+exe 'hi TabLine'        . WhiteOnLightBlack
+exe 'hi TabLineFill'    . WhiteOnLightBlack
+exe 'hi TabLineSel'     . WhiteOnBlack
+exe 'hi LineNr'         . LightBlackOnBlack
+exe 'hi NonText'        . LightBlackOnBlack
+exe 'hi SpecialKey'     . LightBlackOnBlack
+exe 'hi ModeMsg'        . LightBlackOnBlack
+exe 'hi String'         . LightWhiteOnBlack
+exe 'hi Identifier'     . CyanOnBlack
+exe 'hi Number'         . LightYellowOnBlack
+exe 'hi Operator'       . GreenOnBlack
+exe 'hi Statement'      . GreenOnBlack
+exe 'hi Keyword'        . GreenOnBlack
+exe 'hi Type'           . LightGreenOnBlack
+exe 'hi MatchParen'     . WhiteOnLightBlack
+exe 'hi Visual'         . WhiteOnLightBlack
+
+
+"
+" 256 Color Terminal Overrides
+"
+if &t_Co > 16
+hi Identifier       ctermfg=250                     cterm=NONE
+hi Number           ctermfg=227
+hi Operator         ctermfg=180
+hi String           ctermfg=208
+hi FoldColumn       ctermfg=250     ctermbg=238
+hi LineNr           ctermfg=237     ctermbg=235
+hi PreProc          ctermfg=97
+hi Keyword          ctermfg=71
+hi Conditional      ctermfg=71
+hi Statement        ctermfg=71
+hi Type             ctermfg=71
+hi Structure        ctermfg=68
+hi Tag              ctermfg=71
+hi xmlTagName       ctermfg=71
+hi xmlCdata         ctermfg=107
+hi xmlAttrib        ctermfg=68
+hi htmlTagName      ctermfg=71
+hi htmlArg          ctermfg=68
+hi ErrorMsg         ctermfg=9
+hi WarningMsg       ctermfg=227
+hi Folded           ctermfg=244     ctermbg=234
+hi PMenu            ctermfg=147     ctermbg=234
+hi PMenuSel                         ctermbg=234
+hi ModeMsg          ctermfg=239     ctermbg=234
+hi NonText          ctermfg=239
+hi SpecialKey       ctermfg=239
+endif
+
+
+"
+" GUI Overrides
+"
+if has("gui_running")
+hi Comment          guifg=#99AA8A
+hi Normal           guifg=#FFFFFF   guibg=#22282A
+hi Identifier       guifg=#FFFFFF
+hi Number           guifg=#FFCD22
+hi Operator         guifg=#E8E2B7
+hi String           guifg=#EC7600
+hi FoldColumn       guifg=#FFFFFF   guibg=#394144
+hi LineNr           guifg=#3F4E49   guibg=#293134
+hi PreProc          guifg=#A082BD
+hi Keyword          guifg=#93C763
+hi Conditional      guifg=#93C763
+hi Statement        guifg=#93C763
+hi Type             guifg=#93C763
+hi Structure        guifg=#678CB1
+hi Tag              guifg=#93C763
+hi xmlTagName       guifg=#93C763
+hi xmlCdata         guifg=#99A38A
+hi xmlAttrib        guifg=#678CB1
+hi htmlTagName      guifg=#93C763
+hi htmlArg          guifg=#678CB1
+hi ErrorMsg         guifg=#FF0000
+hi WarningMsg       guifg=#FFCD22
+hi Folded           guifg=#808080   guibg=#1C2325
+hi PMenu            guifg=#CCCCFF   guibg=#1C2325
+hi PMenuSel                         guibg=#2C3335
+hi TabLine
+hi TabLineFill
+hi TabLineSel
+hi Visual           guifg=#FFFFFF   guibg=#4F6164
+hi VisualNOS        guifg=#FFFFFF   guibg=#4F6164
+endif
 
