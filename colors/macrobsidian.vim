@@ -7,7 +7,7 @@ let g:colors_name="macrobsidian"
 
 
 "
-" 16 color terminal color combinations, defined for current terminal/gui
+" 16 color terminal combinations and 256 color terminal individual colours
 "
 let BlackOnBlack = ' ctermfg=0 ctermbg=0 cterm=NONE'
 let BlackOnRed = ' ctermfg=0 ctermbg=1 cterm=NONE'
@@ -330,6 +330,278 @@ let WhiteOnLightBlue = ' ctermfg=7 ctermbg=12 cterm=NONE'
 let WhiteOnLightMagenta = ' ctermfg=7 ctermbg=13 cterm=NONE'
 let WhiteOnLightCyan = ' ctermfg=7 ctermbg=14 cterm=NONE'
 let WhiteOnLightWhite = ' ctermfg=7 ctermbg=15 cterm=NONE'
+let FgBlack = ' ctermfg=0' | let BgBlack = ' ctermbg=0'
+let FgRed = ' ctermfg=1' | let BgRed = ' ctermbg=1'
+let FgGreen = ' ctermfg=2' | let BgGreen = ' ctermbg=2'
+let FgYellow = ' ctermfg=3' | let BgYellow = ' ctermbg=3'
+let FgBlue = ' ctermfg=4' | let BgBlue = ' ctermbg=4'
+let FgMagenta = ' ctermfg=5' | let BgMagenta = ' ctermbg=5'
+let FgCyan = ' ctermfg=6' | let BgCyan = ' ctermbg=6'
+let FgWhite = ' ctermfg=7' | let BgWhite = ' ctermbg=7'
+let FgLightBlack = ' ctermfg=8' | let BgLightBlack = ' ctermbg=8'
+let FgLightRed = ' ctermfg=9' | let BgLightRed = ' ctermbg=9'
+let FgLightGreen = ' ctermfg=10' | let BgLightGreen = ' ctermbg=10'
+let FgLightYellow = ' ctermfg=11' | let BgLightYellow = ' ctermbg=11'
+let FgLightBlue = ' ctermfg=12' | let BgLightBlue = ' ctermbg=12'
+let FgLightMagenta = ' ctermfg=13' | let BgLightMagenta = ' ctermbg=13'
+let FgLightCyan = ' ctermfg=14' | let BgLightCyan = ' ctermbg=14'
+let FgLightWhite = ' ctermfg=15' | let BgLightWhite = ' ctermbg=15'
+let Fg0 = ' ctermfg=0' | let Bg0 = ' ctermbg=0'
+let Fg1 = ' ctermfg=1' | let Bg1 = ' ctermbg=1'
+let Fg2 = ' ctermfg=2' | let Bg2 = ' ctermbg=2'
+let Fg3 = ' ctermfg=3' | let Bg3 = ' ctermbg=3'
+let Fg4 = ' ctermfg=4' | let Bg4 = ' ctermbg=4'
+let Fg5 = ' ctermfg=5' | let Bg5 = ' ctermbg=5'
+let Fg6 = ' ctermfg=6' | let Bg6 = ' ctermbg=6'
+let Fg7 = ' ctermfg=7' | let Bg7 = ' ctermbg=7'
+let Fg8 = ' ctermfg=8' | let Bg8 = ' ctermbg=8'
+let Fg9 = ' ctermfg=9' | let Bg9 = ' ctermbg=9'
+let Fg10 = ' ctermfg=10' | let Bg10 = ' ctermbg=10'
+let Fg11 = ' ctermfg=11' | let Bg11 = ' ctermbg=11'
+let Fg12 = ' ctermfg=12' | let Bg12 = ' ctermbg=12'
+let Fg13 = ' ctermfg=13' | let Bg13 = ' ctermbg=13'
+let Fg14 = ' ctermfg=14' | let Bg14 = ' ctermbg=14'
+let Fg15 = ' ctermfg=15' | let Bg15 = ' ctermbg=15'
+let Fg16 = ' ctermfg=16' | let Bg16 = ' ctermbg=16'
+let Fg17 = ' ctermfg=17' | let Bg17 = ' ctermbg=17'
+let Fg18 = ' ctermfg=18' | let Bg18 = ' ctermbg=18'
+let Fg19 = ' ctermfg=19' | let Bg19 = ' ctermbg=19'
+let Fg20 = ' ctermfg=20' | let Bg20 = ' ctermbg=20'
+let Fg21 = ' ctermfg=21' | let Bg21 = ' ctermbg=21'
+let Fg22 = ' ctermfg=22' | let Bg22 = ' ctermbg=22'
+let Fg23 = ' ctermfg=23' | let Bg23 = ' ctermbg=23'
+let Fg24 = ' ctermfg=24' | let Bg24 = ' ctermbg=24'
+let Fg25 = ' ctermfg=25' | let Bg25 = ' ctermbg=25'
+let Fg26 = ' ctermfg=26' | let Bg26 = ' ctermbg=26'
+let Fg27 = ' ctermfg=27' | let Bg27 = ' ctermbg=27'
+let Fg28 = ' ctermfg=28' | let Bg28 = ' ctermbg=28'
+let Fg29 = ' ctermfg=29' | let Bg29 = ' ctermbg=29'
+let Fg30 = ' ctermfg=30' | let Bg30 = ' ctermbg=30'
+let Fg31 = ' ctermfg=31' | let Bg31 = ' ctermbg=31'
+let Fg32 = ' ctermfg=32' | let Bg32 = ' ctermbg=32'
+let Fg33 = ' ctermfg=33' | let Bg33 = ' ctermbg=33'
+let Fg34 = ' ctermfg=34' | let Bg34 = ' ctermbg=34'
+let Fg35 = ' ctermfg=35' | let Bg35 = ' ctermbg=35'
+let Fg36 = ' ctermfg=36' | let Bg36 = ' ctermbg=36'
+let Fg37 = ' ctermfg=37' | let Bg37 = ' ctermbg=37'
+let Fg38 = ' ctermfg=38' | let Bg38 = ' ctermbg=38'
+let Fg39 = ' ctermfg=39' | let Bg39 = ' ctermbg=39'
+let Fg40 = ' ctermfg=40' | let Bg40 = ' ctermbg=40'
+let Fg41 = ' ctermfg=41' | let Bg41 = ' ctermbg=41'
+let Fg42 = ' ctermfg=42' | let Bg42 = ' ctermbg=42'
+let Fg43 = ' ctermfg=43' | let Bg43 = ' ctermbg=43'
+let Fg44 = ' ctermfg=44' | let Bg44 = ' ctermbg=44'
+let Fg45 = ' ctermfg=45' | let Bg45 = ' ctermbg=45'
+let Fg46 = ' ctermfg=46' | let Bg46 = ' ctermbg=46'
+let Fg47 = ' ctermfg=47' | let Bg47 = ' ctermbg=47'
+let Fg48 = ' ctermfg=48' | let Bg48 = ' ctermbg=48'
+let Fg49 = ' ctermfg=49' | let Bg49 = ' ctermbg=49'
+let Fg50 = ' ctermfg=50' | let Bg50 = ' ctermbg=50'
+let Fg51 = ' ctermfg=51' | let Bg51 = ' ctermbg=51'
+let Fg52 = ' ctermfg=52' | let Bg52 = ' ctermbg=52'
+let Fg53 = ' ctermfg=53' | let Bg53 = ' ctermbg=53'
+let Fg54 = ' ctermfg=54' | let Bg54 = ' ctermbg=54'
+let Fg55 = ' ctermfg=55' | let Bg55 = ' ctermbg=55'
+let Fg56 = ' ctermfg=56' | let Bg56 = ' ctermbg=56'
+let Fg57 = ' ctermfg=57' | let Bg57 = ' ctermbg=57'
+let Fg58 = ' ctermfg=58' | let Bg58 = ' ctermbg=58'
+let Fg59 = ' ctermfg=59' | let Bg59 = ' ctermbg=59'
+let Fg60 = ' ctermfg=60' | let Bg60 = ' ctermbg=60'
+let Fg61 = ' ctermfg=61' | let Bg61 = ' ctermbg=61'
+let Fg62 = ' ctermfg=62' | let Bg62 = ' ctermbg=62'
+let Fg63 = ' ctermfg=63' | let Bg63 = ' ctermbg=63'
+let Fg64 = ' ctermfg=64' | let Bg64 = ' ctermbg=64'
+let Fg65 = ' ctermfg=65' | let Bg65 = ' ctermbg=65'
+let Fg66 = ' ctermfg=66' | let Bg66 = ' ctermbg=66'
+let Fg67 = ' ctermfg=67' | let Bg67 = ' ctermbg=67'
+let Fg68 = ' ctermfg=68' | let Bg68 = ' ctermbg=68'
+let Fg69 = ' ctermfg=69' | let Bg69 = ' ctermbg=69'
+let Fg70 = ' ctermfg=70' | let Bg70 = ' ctermbg=70'
+let Fg71 = ' ctermfg=71' | let Bg71 = ' ctermbg=71'
+let Fg72 = ' ctermfg=72' | let Bg72 = ' ctermbg=72'
+let Fg73 = ' ctermfg=73' | let Bg73 = ' ctermbg=73'
+let Fg74 = ' ctermfg=74' | let Bg74 = ' ctermbg=74'
+let Fg75 = ' ctermfg=75' | let Bg75 = ' ctermbg=75'
+let Fg76 = ' ctermfg=76' | let Bg76 = ' ctermbg=76'
+let Fg77 = ' ctermfg=77' | let Bg77 = ' ctermbg=77'
+let Fg78 = ' ctermfg=78' | let Bg78 = ' ctermbg=78'
+let Fg79 = ' ctermfg=79' | let Bg79 = ' ctermbg=79'
+let Fg80 = ' ctermfg=80' | let Bg80 = ' ctermbg=80'
+let Fg81 = ' ctermfg=81' | let Bg81 = ' ctermbg=81'
+let Fg82 = ' ctermfg=82' | let Bg82 = ' ctermbg=82'
+let Fg83 = ' ctermfg=83' | let Bg83 = ' ctermbg=83'
+let Fg84 = ' ctermfg=84' | let Bg84 = ' ctermbg=84'
+let Fg85 = ' ctermfg=85' | let Bg85 = ' ctermbg=85'
+let Fg86 = ' ctermfg=86' | let Bg86 = ' ctermbg=86'
+let Fg87 = ' ctermfg=87' | let Bg87 = ' ctermbg=87'
+let Fg88 = ' ctermfg=88' | let Bg88 = ' ctermbg=88'
+let Fg89 = ' ctermfg=89' | let Bg89 = ' ctermbg=89'
+let Fg90 = ' ctermfg=90' | let Bg90 = ' ctermbg=90'
+let Fg91 = ' ctermfg=91' | let Bg91 = ' ctermbg=91'
+let Fg92 = ' ctermfg=92' | let Bg92 = ' ctermbg=92'
+let Fg93 = ' ctermfg=93' | let Bg93 = ' ctermbg=93'
+let Fg94 = ' ctermfg=94' | let Bg94 = ' ctermbg=94'
+let Fg95 = ' ctermfg=95' | let Bg95 = ' ctermbg=95'
+let Fg96 = ' ctermfg=96' | let Bg96 = ' ctermbg=96'
+let Fg97 = ' ctermfg=97' | let Bg97 = ' ctermbg=97'
+let Fg98 = ' ctermfg=98' | let Bg98 = ' ctermbg=98'
+let Fg99 = ' ctermfg=99' | let Bg99 = ' ctermbg=99'
+let Fg100 = ' ctermfg=100' | let Bg100 = ' ctermbg=100'
+let Fg101 = ' ctermfg=101' | let Bg101 = ' ctermbg=101'
+let Fg102 = ' ctermfg=102' | let Bg102 = ' ctermbg=102'
+let Fg103 = ' ctermfg=103' | let Bg103 = ' ctermbg=103'
+let Fg104 = ' ctermfg=104' | let Bg104 = ' ctermbg=104'
+let Fg105 = ' ctermfg=105' | let Bg105 = ' ctermbg=105'
+let Fg106 = ' ctermfg=106' | let Bg106 = ' ctermbg=106'
+let Fg107 = ' ctermfg=107' | let Bg107 = ' ctermbg=107'
+let Fg108 = ' ctermfg=108' | let Bg108 = ' ctermbg=108'
+let Fg109 = ' ctermfg=109' | let Bg109 = ' ctermbg=109'
+let Fg110 = ' ctermfg=110' | let Bg110 = ' ctermbg=110'
+let Fg111 = ' ctermfg=111' | let Bg111 = ' ctermbg=111'
+let Fg112 = ' ctermfg=112' | let Bg112 = ' ctermbg=112'
+let Fg113 = ' ctermfg=113' | let Bg113 = ' ctermbg=113'
+let Fg114 = ' ctermfg=114' | let Bg114 = ' ctermbg=114'
+let Fg115 = ' ctermfg=115' | let Bg115 = ' ctermbg=115'
+let Fg116 = ' ctermfg=116' | let Bg116 = ' ctermbg=116'
+let Fg117 = ' ctermfg=117' | let Bg117 = ' ctermbg=117'
+let Fg118 = ' ctermfg=118' | let Bg118 = ' ctermbg=118'
+let Fg119 = ' ctermfg=119' | let Bg119 = ' ctermbg=119'
+let Fg120 = ' ctermfg=120' | let Bg120 = ' ctermbg=120'
+let Fg121 = ' ctermfg=121' | let Bg121 = ' ctermbg=121'
+let Fg122 = ' ctermfg=122' | let Bg122 = ' ctermbg=122'
+let Fg123 = ' ctermfg=123' | let Bg123 = ' ctermbg=123'
+let Fg124 = ' ctermfg=124' | let Bg124 = ' ctermbg=124'
+let Fg125 = ' ctermfg=125' | let Bg125 = ' ctermbg=125'
+let Fg126 = ' ctermfg=126' | let Bg126 = ' ctermbg=126'
+let Fg127 = ' ctermfg=127' | let Bg127 = ' ctermbg=127'
+let Fg128 = ' ctermfg=128' | let Bg128 = ' ctermbg=128'
+let Fg129 = ' ctermfg=129' | let Bg129 = ' ctermbg=129'
+let Fg130 = ' ctermfg=130' | let Bg130 = ' ctermbg=130'
+let Fg131 = ' ctermfg=131' | let Bg131 = ' ctermbg=131'
+let Fg132 = ' ctermfg=132' | let Bg132 = ' ctermbg=132'
+let Fg133 = ' ctermfg=133' | let Bg133 = ' ctermbg=133'
+let Fg134 = ' ctermfg=134' | let Bg134 = ' ctermbg=134'
+let Fg135 = ' ctermfg=135' | let Bg135 = ' ctermbg=135'
+let Fg136 = ' ctermfg=136' | let Bg136 = ' ctermbg=136'
+let Fg137 = ' ctermfg=137' | let Bg137 = ' ctermbg=137'
+let Fg138 = ' ctermfg=138' | let Bg138 = ' ctermbg=138'
+let Fg139 = ' ctermfg=139' | let Bg139 = ' ctermbg=139'
+let Fg140 = ' ctermfg=140' | let Bg140 = ' ctermbg=140'
+let Fg141 = ' ctermfg=141' | let Bg141 = ' ctermbg=141'
+let Fg142 = ' ctermfg=142' | let Bg142 = ' ctermbg=142'
+let Fg143 = ' ctermfg=143' | let Bg143 = ' ctermbg=143'
+let Fg144 = ' ctermfg=144' | let Bg144 = ' ctermbg=144'
+let Fg145 = ' ctermfg=145' | let Bg145 = ' ctermbg=145'
+let Fg146 = ' ctermfg=146' | let Bg146 = ' ctermbg=146'
+let Fg147 = ' ctermfg=147' | let Bg147 = ' ctermbg=147'
+let Fg148 = ' ctermfg=148' | let Bg148 = ' ctermbg=148'
+let Fg149 = ' ctermfg=149' | let Bg149 = ' ctermbg=149'
+let Fg150 = ' ctermfg=150' | let Bg150 = ' ctermbg=150'
+let Fg151 = ' ctermfg=151' | let Bg151 = ' ctermbg=151'
+let Fg152 = ' ctermfg=152' | let Bg152 = ' ctermbg=152'
+let Fg153 = ' ctermfg=153' | let Bg153 = ' ctermbg=153'
+let Fg154 = ' ctermfg=154' | let Bg154 = ' ctermbg=154'
+let Fg155 = ' ctermfg=155' | let Bg155 = ' ctermbg=155'
+let Fg156 = ' ctermfg=156' | let Bg156 = ' ctermbg=156'
+let Fg157 = ' ctermfg=157' | let Bg157 = ' ctermbg=157'
+let Fg158 = ' ctermfg=158' | let Bg158 = ' ctermbg=158'
+let Fg159 = ' ctermfg=159' | let Bg159 = ' ctermbg=159'
+let Fg160 = ' ctermfg=160' | let Bg160 = ' ctermbg=160'
+let Fg161 = ' ctermfg=161' | let Bg161 = ' ctermbg=161'
+let Fg162 = ' ctermfg=162' | let Bg162 = ' ctermbg=162'
+let Fg163 = ' ctermfg=163' | let Bg163 = ' ctermbg=163'
+let Fg164 = ' ctermfg=164' | let Bg164 = ' ctermbg=164'
+let Fg165 = ' ctermfg=165' | let Bg165 = ' ctermbg=165'
+let Fg166 = ' ctermfg=166' | let Bg166 = ' ctermbg=166'
+let Fg167 = ' ctermfg=167' | let Bg167 = ' ctermbg=167'
+let Fg168 = ' ctermfg=168' | let Bg168 = ' ctermbg=168'
+let Fg169 = ' ctermfg=169' | let Bg169 = ' ctermbg=169'
+let Fg170 = ' ctermfg=170' | let Bg170 = ' ctermbg=170'
+let Fg171 = ' ctermfg=171' | let Bg171 = ' ctermbg=171'
+let Fg172 = ' ctermfg=172' | let Bg172 = ' ctermbg=172'
+let Fg173 = ' ctermfg=173' | let Bg173 = ' ctermbg=173'
+let Fg174 = ' ctermfg=174' | let Bg174 = ' ctermbg=174'
+let Fg175 = ' ctermfg=175' | let Bg175 = ' ctermbg=175'
+let Fg176 = ' ctermfg=176' | let Bg176 = ' ctermbg=176'
+let Fg177 = ' ctermfg=177' | let Bg177 = ' ctermbg=177'
+let Fg178 = ' ctermfg=178' | let Bg178 = ' ctermbg=178'
+let Fg179 = ' ctermfg=179' | let Bg179 = ' ctermbg=179'
+let Fg180 = ' ctermfg=180' | let Bg180 = ' ctermbg=180'
+let Fg181 = ' ctermfg=181' | let Bg181 = ' ctermbg=181'
+let Fg182 = ' ctermfg=182' | let Bg182 = ' ctermbg=182'
+let Fg183 = ' ctermfg=183' | let Bg183 = ' ctermbg=183'
+let Fg184 = ' ctermfg=184' | let Bg184 = ' ctermbg=184'
+let Fg185 = ' ctermfg=185' | let Bg185 = ' ctermbg=185'
+let Fg186 = ' ctermfg=186' | let Bg186 = ' ctermbg=186'
+let Fg187 = ' ctermfg=187' | let Bg187 = ' ctermbg=187'
+let Fg188 = ' ctermfg=188' | let Bg188 = ' ctermbg=188'
+let Fg189 = ' ctermfg=189' | let Bg189 = ' ctermbg=189'
+let Fg190 = ' ctermfg=190' | let Bg190 = ' ctermbg=190'
+let Fg191 = ' ctermfg=191' | let Bg191 = ' ctermbg=191'
+let Fg192 = ' ctermfg=192' | let Bg192 = ' ctermbg=192'
+let Fg193 = ' ctermfg=193' | let Bg193 = ' ctermbg=193'
+let Fg194 = ' ctermfg=194' | let Bg194 = ' ctermbg=194'
+let Fg195 = ' ctermfg=195' | let Bg195 = ' ctermbg=195'
+let Fg196 = ' ctermfg=196' | let Bg196 = ' ctermbg=196'
+let Fg197 = ' ctermfg=197' | let Bg197 = ' ctermbg=197'
+let Fg198 = ' ctermfg=198' | let Bg198 = ' ctermbg=198'
+let Fg199 = ' ctermfg=199' | let Bg199 = ' ctermbg=199'
+let Fg200 = ' ctermfg=200' | let Bg200 = ' ctermbg=200'
+let Fg201 = ' ctermfg=201' | let Bg201 = ' ctermbg=201'
+let Fg202 = ' ctermfg=202' | let Bg202 = ' ctermbg=202'
+let Fg203 = ' ctermfg=203' | let Bg203 = ' ctermbg=203'
+let Fg204 = ' ctermfg=204' | let Bg204 = ' ctermbg=204'
+let Fg205 = ' ctermfg=205' | let Bg205 = ' ctermbg=205'
+let Fg206 = ' ctermfg=206' | let Bg206 = ' ctermbg=206'
+let Fg207 = ' ctermfg=207' | let Bg207 = ' ctermbg=207'
+let Fg208 = ' ctermfg=208' | let Bg208 = ' ctermbg=208'
+let Fg209 = ' ctermfg=209' | let Bg209 = ' ctermbg=209'
+let Fg210 = ' ctermfg=210' | let Bg210 = ' ctermbg=210'
+let Fg211 = ' ctermfg=211' | let Bg211 = ' ctermbg=211'
+let Fg212 = ' ctermfg=212' | let Bg212 = ' ctermbg=212'
+let Fg213 = ' ctermfg=213' | let Bg213 = ' ctermbg=213'
+let Fg214 = ' ctermfg=214' | let Bg214 = ' ctermbg=214'
+let Fg215 = ' ctermfg=215' | let Bg215 = ' ctermbg=215'
+let Fg216 = ' ctermfg=216' | let Bg216 = ' ctermbg=216'
+let Fg217 = ' ctermfg=217' | let Bg217 = ' ctermbg=217'
+let Fg218 = ' ctermfg=218' | let Bg218 = ' ctermbg=218'
+let Fg219 = ' ctermfg=219' | let Bg219 = ' ctermbg=219'
+let Fg220 = ' ctermfg=220' | let Bg220 = ' ctermbg=220'
+let Fg221 = ' ctermfg=221' | let Bg221 = ' ctermbg=221'
+let Fg222 = ' ctermfg=222' | let Bg222 = ' ctermbg=222'
+let Fg223 = ' ctermfg=223' | let Bg223 = ' ctermbg=223'
+let Fg224 = ' ctermfg=224' | let Bg224 = ' ctermbg=224'
+let Fg225 = ' ctermfg=225' | let Bg225 = ' ctermbg=225'
+let Fg226 = ' ctermfg=226' | let Bg226 = ' ctermbg=226'
+let Fg227 = ' ctermfg=227' | let Bg227 = ' ctermbg=227'
+let Fg228 = ' ctermfg=228' | let Bg228 = ' ctermbg=228'
+let Fg229 = ' ctermfg=229' | let Bg229 = ' ctermbg=229'
+let Fg230 = ' ctermfg=230' | let Bg230 = ' ctermbg=230'
+let Fg231 = ' ctermfg=231' | let Bg231 = ' ctermbg=231'
+let Fg232 = ' ctermfg=232' | let Bg232 = ' ctermbg=232'
+let Fg233 = ' ctermfg=233' | let Bg233 = ' ctermbg=233'
+let Fg234 = ' ctermfg=234' | let Bg234 = ' ctermbg=234'
+let Fg235 = ' ctermfg=235' | let Bg235 = ' ctermbg=235'
+let Fg236 = ' ctermfg=236' | let Bg236 = ' ctermbg=236'
+let Fg237 = ' ctermfg=237' | let Bg237 = ' ctermbg=237'
+let Fg238 = ' ctermfg=238' | let Bg238 = ' ctermbg=238'
+let Fg239 = ' ctermfg=239' | let Bg239 = ' ctermbg=239'
+let Fg240 = ' ctermfg=240' | let Bg240 = ' ctermbg=240'
+let Fg241 = ' ctermfg=241' | let Bg241 = ' ctermbg=241'
+let Fg242 = ' ctermfg=242' | let Bg242 = ' ctermbg=242'
+let Fg243 = ' ctermfg=243' | let Bg243 = ' ctermbg=243'
+let Fg244 = ' ctermfg=244' | let Bg244 = ' ctermbg=244'
+let Fg245 = ' ctermfg=245' | let Bg245 = ' ctermbg=245'
+let Fg246 = ' ctermfg=246' | let Bg246 = ' ctermbg=246'
+let Fg247 = ' ctermfg=247' | let Bg247 = ' ctermbg=247'
+let Fg248 = ' ctermfg=248' | let Bg248 = ' ctermbg=248'
+let Fg249 = ' ctermfg=249' | let Bg249 = ' ctermbg=249'
+let Fg250 = ' ctermfg=250' | let Bg250 = ' ctermbg=250'
+let Fg251 = ' ctermfg=251' | let Bg251 = ' ctermbg=251'
+let Fg252 = ' ctermfg=252' | let Bg252 = ' ctermbg=252'
+let Fg253 = ' ctermfg=253' | let Bg253 = ' ctermbg=253'
+let Fg254 = ' ctermfg=254' | let Bg254 = ' ctermbg=254'
+let Fg255 = ' ctermfg=255' | let Bg255 = ' ctermbg=255'
 endif
 if has("gui_running")
 let BlackOnBlack = ' guifg=#000000 guibg=#000000 gui=NONE'
@@ -524,62 +796,334 @@ let WhiteOnLightBlue = ' guifg=#C0C0C0 guibg=#0000FF gui=NONE'
 let WhiteOnLightMagenta = ' guifg=#C0C0C0 guibg=#FF00FF gui=NONE'
 let WhiteOnLightCyan = ' guifg=#C0C0C0 guibg=#00FFFF gui=NONE'
 let WhiteOnLightWhite = ' guifg=#C0C0C0 guibg=#FFFFFF gui=NONE'
+let FgBlack = ' guifg=#000000' | let BgBlack = ' guibg=#000000'
+let FgRed = ' guifg=#800000' | let BgRed = ' guibg=#800000'
+let FgGreen = ' guifg=#008000' | let BgGreen = ' guibg=#008000'
+let FgYellow = ' guifg=#808000' | let BgYellow = ' guibg=#808000'
+let FgBlue = ' guifg=#000080' | let BgBlue = ' guibg=#000080'
+let FgMagenta = ' guifg=#800080' | let BgMagenta = ' guibg=#800080'
+let FgCyan = ' guifg=#008080' | let BgCyan = ' guibg=#008080'
+let FgWhite = ' guifg=#C0C0C0' | let BgWhite = ' guibg=#C0C0C0'
+let FgLightBlack = ' guifg=#808080' | let BgLightBlack = ' guibg=#808080'
+let FgLightRed = ' guifg=#FF0000' | let BgLightRed = ' guibg=#FF0000'
+let FgLightGreen = ' guifg=#00FF00' | let BgLightGreen = ' guibg=#00FF00'
+let FgLightYellow = ' guifg=#FFFF00' | let BgLightYellow = ' guibg=#FFFF00'
+let FgLightBlue = ' guifg=#0000FF' | let BgLightBlue = ' guibg=#0000FF'
+let FgLightMagenta = ' guifg=#FF00FF' | let BgLightMagenta = ' guibg=#FF00FF'
+let FgLightCyan = ' guifg=#00FFFF' | let BgLightCyan = ' guibg=#00FFFF'
+let FgLightWhite = ' guifg=#FFFFFF' | let BgLightWhite = ' guibg=#FFFFFF'
+let Fg0 = ' guifg=#000000' | let Bg0 = ' guibg=#000000'
+let Fg1 = ' guifg=#800000' | let Bg1 = ' guibg=#800000'
+let Fg2 = ' guifg=#008000' | let Bg2 = ' guibg=#008000'
+let Fg3 = ' guifg=#808000' | let Bg3 = ' guibg=#808000'
+let Fg4 = ' guifg=#000080' | let Bg4 = ' guibg=#000080'
+let Fg5 = ' guifg=#800080' | let Bg5 = ' guibg=#800080'
+let Fg6 = ' guifg=#008080' | let Bg6 = ' guibg=#008080'
+let Fg7 = ' guifg=#C0C0C0' | let Bg7 = ' guibg=#C0C0C0'
+let Fg8 = ' guifg=#808080' | let Bg8 = ' guibg=#808080'
+let Fg9 = ' guifg=#FF0000' | let Bg9 = ' guibg=#FF0000'
+let Fg10 = ' guifg=#00FF00' | let Bg10 = ' guibg=#00FF00'
+let Fg11 = ' guifg=#FFFF00' | let Bg11 = ' guibg=#FFFF00'
+let Fg12 = ' guifg=#0000FF' | let Bg12 = ' guibg=#0000FF'
+let Fg13 = ' guifg=#FF00FF' | let Bg13 = ' guibg=#FF00FF'
+let Fg14 = ' guifg=#00FFFF' | let Bg14 = ' guibg=#00FFFF'
+let Fg15 = ' guifg=#FFFFFF' | let Bg15 = ' guibg=#FFFFFF'
+let Fg16 = ' guifg=#000000' | let Bg16 = ' guibg=#000000'
+let Fg17 = ' guifg=#00005F' | let Bg17 = ' guibg=#00005F'
+let Fg18 = ' guifg=#000087' | let Bg18 = ' guibg=#000087'
+let Fg19 = ' guifg=#0000AF' | let Bg19 = ' guibg=#0000AF'
+let Fg20 = ' guifg=#0000D7' | let Bg20 = ' guibg=#0000D7'
+let Fg21 = ' guifg=#0000FF' | let Bg21 = ' guibg=#0000FF'
+let Fg22 = ' guifg=#005F00' | let Bg22 = ' guibg=#005F00'
+let Fg23 = ' guifg=#005F5F' | let Bg23 = ' guibg=#005F5F'
+let Fg24 = ' guifg=#005F87' | let Bg24 = ' guibg=#005F87'
+let Fg25 = ' guifg=#005FAF' | let Bg25 = ' guibg=#005FAF'
+let Fg26 = ' guifg=#005FD7' | let Bg26 = ' guibg=#005FD7'
+let Fg27 = ' guifg=#005FFF' | let Bg27 = ' guibg=#005FFF'
+let Fg28 = ' guifg=#008700' | let Bg28 = ' guibg=#008700'
+let Fg29 = ' guifg=#00875F' | let Bg29 = ' guibg=#00875F'
+let Fg30 = ' guifg=#008787' | let Bg30 = ' guibg=#008787'
+let Fg31 = ' guifg=#0087AF' | let Bg31 = ' guibg=#0087AF'
+let Fg32 = ' guifg=#0087D7' | let Bg32 = ' guibg=#0087D7'
+let Fg33 = ' guifg=#0087FF' | let Bg33 = ' guibg=#0087FF'
+let Fg34 = ' guifg=#00AF00' | let Bg34 = ' guibg=#00AF00'
+let Fg35 = ' guifg=#00AF5F' | let Bg35 = ' guibg=#00AF5F'
+let Fg36 = ' guifg=#00AF87' | let Bg36 = ' guibg=#00AF87'
+let Fg37 = ' guifg=#00AFAF' | let Bg37 = ' guibg=#00AFAF'
+let Fg38 = ' guifg=#00AFD7' | let Bg38 = ' guibg=#00AFD7'
+let Fg39 = ' guifg=#00AFFF' | let Bg39 = ' guibg=#00AFFF'
+let Fg40 = ' guifg=#00D700' | let Bg40 = ' guibg=#00D700'
+let Fg41 = ' guifg=#00D75F' | let Bg41 = ' guibg=#00D75F'
+let Fg42 = ' guifg=#00D787' | let Bg42 = ' guibg=#00D787'
+let Fg43 = ' guifg=#00D7AF' | let Bg43 = ' guibg=#00D7AF'
+let Fg44 = ' guifg=#00D7D7' | let Bg44 = ' guibg=#00D7D7'
+let Fg45 = ' guifg=#00D7FF' | let Bg45 = ' guibg=#00D7FF'
+let Fg46 = ' guifg=#00FF00' | let Bg46 = ' guibg=#00FF00'
+let Fg47 = ' guifg=#00FF5F' | let Bg47 = ' guibg=#00FF5F'
+let Fg48 = ' guifg=#00FF87' | let Bg48 = ' guibg=#00FF87'
+let Fg49 = ' guifg=#00FFAF' | let Bg49 = ' guibg=#00FFAF'
+let Fg50 = ' guifg=#00FFD7' | let Bg50 = ' guibg=#00FFD7'
+let Fg51 = ' guifg=#00FFFF' | let Bg51 = ' guibg=#00FFFF'
+let Fg52 = ' guifg=#5F0000' | let Bg52 = ' guibg=#5F0000'
+let Fg53 = ' guifg=#5F005F' | let Bg53 = ' guibg=#5F005F'
+let Fg54 = ' guifg=#5F0087' | let Bg54 = ' guibg=#5F0087'
+let Fg55 = ' guifg=#5F00AF' | let Bg55 = ' guibg=#5F00AF'
+let Fg56 = ' guifg=#5F00D7' | let Bg56 = ' guibg=#5F00D7'
+let Fg57 = ' guifg=#5F00FF' | let Bg57 = ' guibg=#5F00FF'
+let Fg58 = ' guifg=#5F5F00' | let Bg58 = ' guibg=#5F5F00'
+let Fg59 = ' guifg=#5F5F5F' | let Bg59 = ' guibg=#5F5F5F'
+let Fg60 = ' guifg=#5F5F87' | let Bg60 = ' guibg=#5F5F87'
+let Fg61 = ' guifg=#5F5FAF' | let Bg61 = ' guibg=#5F5FAF'
+let Fg62 = ' guifg=#5F5FD7' | let Bg62 = ' guibg=#5F5FD7'
+let Fg63 = ' guifg=#5F5FFF' | let Bg63 = ' guibg=#5F5FFF'
+let Fg64 = ' guifg=#5F8700' | let Bg64 = ' guibg=#5F8700'
+let Fg65 = ' guifg=#5F875F' | let Bg65 = ' guibg=#5F875F'
+let Fg66 = ' guifg=#5F8787' | let Bg66 = ' guibg=#5F8787'
+let Fg67 = ' guifg=#5F87AF' | let Bg67 = ' guibg=#5F87AF'
+let Fg68 = ' guifg=#5F87D7' | let Bg68 = ' guibg=#5F87D7'
+let Fg69 = ' guifg=#5F87FF' | let Bg69 = ' guibg=#5F87FF'
+let Fg70 = ' guifg=#5FAF00' | let Bg70 = ' guibg=#5FAF00'
+let Fg71 = ' guifg=#5FAF5F' | let Bg71 = ' guibg=#5FAF5F'
+let Fg72 = ' guifg=#5FAF87' | let Bg72 = ' guibg=#5FAF87'
+let Fg73 = ' guifg=#5FAFAF' | let Bg73 = ' guibg=#5FAFAF'
+let Fg74 = ' guifg=#5FAFD7' | let Bg74 = ' guibg=#5FAFD7'
+let Fg75 = ' guifg=#5FAFFF' | let Bg75 = ' guibg=#5FAFFF'
+let Fg76 = ' guifg=#5FD700' | let Bg76 = ' guibg=#5FD700'
+let Fg77 = ' guifg=#5FD75F' | let Bg77 = ' guibg=#5FD75F'
+let Fg78 = ' guifg=#5FD787' | let Bg78 = ' guibg=#5FD787'
+let Fg79 = ' guifg=#5FD7AF' | let Bg79 = ' guibg=#5FD7AF'
+let Fg80 = ' guifg=#5FD7D7' | let Bg80 = ' guibg=#5FD7D7'
+let Fg81 = ' guifg=#5FD7FF' | let Bg81 = ' guibg=#5FD7FF'
+let Fg82 = ' guifg=#5FFF00' | let Bg82 = ' guibg=#5FFF00'
+let Fg83 = ' guifg=#5FFF5F' | let Bg83 = ' guibg=#5FFF5F'
+let Fg84 = ' guifg=#5FFF87' | let Bg84 = ' guibg=#5FFF87'
+let Fg85 = ' guifg=#5FFFAF' | let Bg85 = ' guibg=#5FFFAF'
+let Fg86 = ' guifg=#5FFFD7' | let Bg86 = ' guibg=#5FFFD7'
+let Fg87 = ' guifg=#5FFFFF' | let Bg87 = ' guibg=#5FFFFF'
+let Fg88 = ' guifg=#870000' | let Bg88 = ' guibg=#870000'
+let Fg89 = ' guifg=#87005F' | let Bg89 = ' guibg=#87005F'
+let Fg90 = ' guifg=#870087' | let Bg90 = ' guibg=#870087'
+let Fg91 = ' guifg=#8700AF' | let Bg91 = ' guibg=#8700AF'
+let Fg92 = ' guifg=#8700D7' | let Bg92 = ' guibg=#8700D7'
+let Fg93 = ' guifg=#8700FF' | let Bg93 = ' guibg=#8700FF'
+let Fg94 = ' guifg=#875F00' | let Bg94 = ' guibg=#875F00'
+let Fg95 = ' guifg=#875F5F' | let Bg95 = ' guibg=#875F5F'
+let Fg96 = ' guifg=#875F87' | let Bg96 = ' guibg=#875F87'
+let Fg97 = ' guifg=#875FAF' | let Bg97 = ' guibg=#875FAF'
+let Fg98 = ' guifg=#875FD7' | let Bg98 = ' guibg=#875FD7'
+let Fg99 = ' guifg=#875FFF' | let Bg99 = ' guibg=#875FFF'
+let Fg100 = ' guifg=#878700' | let Bg100 = ' guibg=#878700'
+let Fg101 = ' guifg=#87875F' | let Bg101 = ' guibg=#87875F'
+let Fg102 = ' guifg=#878787' | let Bg102 = ' guibg=#878787'
+let Fg103 = ' guifg=#8787AF' | let Bg103 = ' guibg=#8787AF'
+let Fg104 = ' guifg=#8787D7' | let Bg104 = ' guibg=#8787D7'
+let Fg105 = ' guifg=#8787FF' | let Bg105 = ' guibg=#8787FF'
+let Fg106 = ' guifg=#87AF00' | let Bg106 = ' guibg=#87AF00'
+let Fg107 = ' guifg=#87AF5F' | let Bg107 = ' guibg=#87AF5F'
+let Fg108 = ' guifg=#87AF87' | let Bg108 = ' guibg=#87AF87'
+let Fg109 = ' guifg=#87AFAF' | let Bg109 = ' guibg=#87AFAF'
+let Fg110 = ' guifg=#87AFD7' | let Bg110 = ' guibg=#87AFD7'
+let Fg111 = ' guifg=#87AFFF' | let Bg111 = ' guibg=#87AFFF'
+let Fg112 = ' guifg=#87D700' | let Bg112 = ' guibg=#87D700'
+let Fg113 = ' guifg=#87D75F' | let Bg113 = ' guibg=#87D75F'
+let Fg114 = ' guifg=#87D787' | let Bg114 = ' guibg=#87D787'
+let Fg115 = ' guifg=#87D7AF' | let Bg115 = ' guibg=#87D7AF'
+let Fg116 = ' guifg=#87D7D7' | let Bg116 = ' guibg=#87D7D7'
+let Fg117 = ' guifg=#87D7FF' | let Bg117 = ' guibg=#87D7FF'
+let Fg118 = ' guifg=#87FF00' | let Bg118 = ' guibg=#87FF00'
+let Fg119 = ' guifg=#87FF5F' | let Bg119 = ' guibg=#87FF5F'
+let Fg120 = ' guifg=#87FF87' | let Bg120 = ' guibg=#87FF87'
+let Fg121 = ' guifg=#87FFAF' | let Bg121 = ' guibg=#87FFAF'
+let Fg122 = ' guifg=#87FFD7' | let Bg122 = ' guibg=#87FFD7'
+let Fg123 = ' guifg=#87FFFF' | let Bg123 = ' guibg=#87FFFF'
+let Fg124 = ' guifg=#AF0000' | let Bg124 = ' guibg=#AF0000'
+let Fg125 = ' guifg=#AF005F' | let Bg125 = ' guibg=#AF005F'
+let Fg126 = ' guifg=#AF0087' | let Bg126 = ' guibg=#AF0087'
+let Fg127 = ' guifg=#AF00AF' | let Bg127 = ' guibg=#AF00AF'
+let Fg128 = ' guifg=#AF00D7' | let Bg128 = ' guibg=#AF00D7'
+let Fg129 = ' guifg=#AF00FF' | let Bg129 = ' guibg=#AF00FF'
+let Fg130 = ' guifg=#AF5F00' | let Bg130 = ' guibg=#AF5F00'
+let Fg131 = ' guifg=#AF5F5F' | let Bg131 = ' guibg=#AF5F5F'
+let Fg132 = ' guifg=#AF5F87' | let Bg132 = ' guibg=#AF5F87'
+let Fg133 = ' guifg=#AF5FAF' | let Bg133 = ' guibg=#AF5FAF'
+let Fg134 = ' guifg=#AF5FD7' | let Bg134 = ' guibg=#AF5FD7'
+let Fg135 = ' guifg=#AF5FFF' | let Bg135 = ' guibg=#AF5FFF'
+let Fg136 = ' guifg=#AF8700' | let Bg136 = ' guibg=#AF8700'
+let Fg137 = ' guifg=#AF875F' | let Bg137 = ' guibg=#AF875F'
+let Fg138 = ' guifg=#AF8787' | let Bg138 = ' guibg=#AF8787'
+let Fg139 = ' guifg=#AF87AF' | let Bg139 = ' guibg=#AF87AF'
+let Fg140 = ' guifg=#AF87D7' | let Bg140 = ' guibg=#AF87D7'
+let Fg141 = ' guifg=#AF87FF' | let Bg141 = ' guibg=#AF87FF'
+let Fg142 = ' guifg=#AFAF00' | let Bg142 = ' guibg=#AFAF00'
+let Fg143 = ' guifg=#AFAF5F' | let Bg143 = ' guibg=#AFAF5F'
+let Fg144 = ' guifg=#AFAF87' | let Bg144 = ' guibg=#AFAF87'
+let Fg145 = ' guifg=#AFAFAF' | let Bg145 = ' guibg=#AFAFAF'
+let Fg146 = ' guifg=#AFAFD7' | let Bg146 = ' guibg=#AFAFD7'
+let Fg147 = ' guifg=#AFAFFF' | let Bg147 = ' guibg=#AFAFFF'
+let Fg148 = ' guifg=#AFD700' | let Bg148 = ' guibg=#AFD700'
+let Fg149 = ' guifg=#AFD75F' | let Bg149 = ' guibg=#AFD75F'
+let Fg150 = ' guifg=#AFD787' | let Bg150 = ' guibg=#AFD787'
+let Fg151 = ' guifg=#AFD7AF' | let Bg151 = ' guibg=#AFD7AF'
+let Fg152 = ' guifg=#AFD7D7' | let Bg152 = ' guibg=#AFD7D7'
+let Fg153 = ' guifg=#AFD7FF' | let Bg153 = ' guibg=#AFD7FF'
+let Fg154 = ' guifg=#AFFF00' | let Bg154 = ' guibg=#AFFF00'
+let Fg155 = ' guifg=#AFFF5F' | let Bg155 = ' guibg=#AFFF5F'
+let Fg156 = ' guifg=#AFFF87' | let Bg156 = ' guibg=#AFFF87'
+let Fg157 = ' guifg=#AFFFAF' | let Bg157 = ' guibg=#AFFFAF'
+let Fg158 = ' guifg=#AFFFD7' | let Bg158 = ' guibg=#AFFFD7'
+let Fg159 = ' guifg=#AFFFFF' | let Bg159 = ' guibg=#AFFFFF'
+let Fg160 = ' guifg=#D70000' | let Bg160 = ' guibg=#D70000'
+let Fg161 = ' guifg=#D7005F' | let Bg161 = ' guibg=#D7005F'
+let Fg162 = ' guifg=#D70087' | let Bg162 = ' guibg=#D70087'
+let Fg163 = ' guifg=#D700AF' | let Bg163 = ' guibg=#D700AF'
+let Fg164 = ' guifg=#D700D7' | let Bg164 = ' guibg=#D700D7'
+let Fg165 = ' guifg=#D700FF' | let Bg165 = ' guibg=#D700FF'
+let Fg166 = ' guifg=#D75F00' | let Bg166 = ' guibg=#D75F00'
+let Fg167 = ' guifg=#D75F5F' | let Bg167 = ' guibg=#D75F5F'
+let Fg168 = ' guifg=#D75F87' | let Bg168 = ' guibg=#D75F87'
+let Fg169 = ' guifg=#D75FAF' | let Bg169 = ' guibg=#D75FAF'
+let Fg170 = ' guifg=#D75FD7' | let Bg170 = ' guibg=#D75FD7'
+let Fg171 = ' guifg=#D75FFF' | let Bg171 = ' guibg=#D75FFF'
+let Fg172 = ' guifg=#D78700' | let Bg172 = ' guibg=#D78700'
+let Fg173 = ' guifg=#D7875F' | let Bg173 = ' guibg=#D7875F'
+let Fg174 = ' guifg=#D78787' | let Bg174 = ' guibg=#D78787'
+let Fg175 = ' guifg=#D787AF' | let Bg175 = ' guibg=#D787AF'
+let Fg176 = ' guifg=#D787D7' | let Bg176 = ' guibg=#D787D7'
+let Fg177 = ' guifg=#D787FF' | let Bg177 = ' guibg=#D787FF'
+let Fg178 = ' guifg=#D7AF00' | let Bg178 = ' guibg=#D7AF00'
+let Fg179 = ' guifg=#D7AF5F' | let Bg179 = ' guibg=#D7AF5F'
+let Fg180 = ' guifg=#D7AF87' | let Bg180 = ' guibg=#D7AF87'
+let Fg181 = ' guifg=#D7AFAF' | let Bg181 = ' guibg=#D7AFAF'
+let Fg182 = ' guifg=#D7AFD7' | let Bg182 = ' guibg=#D7AFD7'
+let Fg183 = ' guifg=#D7AFFF' | let Bg183 = ' guibg=#D7AFFF'
+let Fg184 = ' guifg=#D7D700' | let Bg184 = ' guibg=#D7D700'
+let Fg185 = ' guifg=#D7D75F' | let Bg185 = ' guibg=#D7D75F'
+let Fg186 = ' guifg=#D7D787' | let Bg186 = ' guibg=#D7D787'
+let Fg187 = ' guifg=#D7D7AF' | let Bg187 = ' guibg=#D7D7AF'
+let Fg188 = ' guifg=#D7D7D7' | let Bg188 = ' guibg=#D7D7D7'
+let Fg189 = ' guifg=#D7D7FF' | let Bg189 = ' guibg=#D7D7FF'
+let Fg190 = ' guifg=#D7FF00' | let Bg190 = ' guibg=#D7FF00'
+let Fg191 = ' guifg=#D7FF5F' | let Bg191 = ' guibg=#D7FF5F'
+let Fg192 = ' guifg=#D7FF87' | let Bg192 = ' guibg=#D7FF87'
+let Fg193 = ' guifg=#D7FFAF' | let Bg193 = ' guibg=#D7FFAF'
+let Fg194 = ' guifg=#D7FFD7' | let Bg194 = ' guibg=#D7FFD7'
+let Fg195 = ' guifg=#D7FFFF' | let Bg195 = ' guibg=#D7FFFF'
+let Fg196 = ' guifg=#FF0000' | let Bg196 = ' guibg=#FF0000'
+let Fg197 = ' guifg=#FF005F' | let Bg197 = ' guibg=#FF005F'
+let Fg198 = ' guifg=#FF0087' | let Bg198 = ' guibg=#FF0087'
+let Fg199 = ' guifg=#FF00AF' | let Bg199 = ' guibg=#FF00AF'
+let Fg200 = ' guifg=#FF00D7' | let Bg200 = ' guibg=#FF00D7'
+let Fg201 = ' guifg=#FF00FF' | let Bg201 = ' guibg=#FF00FF'
+let Fg202 = ' guifg=#FF5F00' | let Bg202 = ' guibg=#FF5F00'
+let Fg203 = ' guifg=#FF5F5F' | let Bg203 = ' guibg=#FF5F5F'
+let Fg204 = ' guifg=#FF5F87' | let Bg204 = ' guibg=#FF5F87'
+let Fg205 = ' guifg=#FF5FAF' | let Bg205 = ' guibg=#FF5FAF'
+let Fg206 = ' guifg=#FF5FD7' | let Bg206 = ' guibg=#FF5FD7'
+let Fg207 = ' guifg=#FF5FFF' | let Bg207 = ' guibg=#FF5FFF'
+let Fg208 = ' guifg=#FF8700' | let Bg208 = ' guibg=#FF8700'
+let Fg209 = ' guifg=#FF875F' | let Bg209 = ' guibg=#FF875F'
+let Fg210 = ' guifg=#FF8787' | let Bg210 = ' guibg=#FF8787'
+let Fg211 = ' guifg=#FF87AF' | let Bg211 = ' guibg=#FF87AF'
+let Fg212 = ' guifg=#FF87D7' | let Bg212 = ' guibg=#FF87D7'
+let Fg213 = ' guifg=#FF87FF' | let Bg213 = ' guibg=#FF87FF'
+let Fg214 = ' guifg=#FFAF00' | let Bg214 = ' guibg=#FFAF00'
+let Fg215 = ' guifg=#FFAF5F' | let Bg215 = ' guibg=#FFAF5F'
+let Fg216 = ' guifg=#FFAF87' | let Bg216 = ' guibg=#FFAF87'
+let Fg217 = ' guifg=#FFAFAF' | let Bg217 = ' guibg=#FFAFAF'
+let Fg218 = ' guifg=#FFAFD7' | let Bg218 = ' guibg=#FFAFD7'
+let Fg219 = ' guifg=#FFAFFF' | let Bg219 = ' guibg=#FFAFFF'
+let Fg220 = ' guifg=#FFD700' | let Bg220 = ' guibg=#FFD700'
+let Fg221 = ' guifg=#FFD75F' | let Bg221 = ' guibg=#FFD75F'
+let Fg222 = ' guifg=#FFD787' | let Bg222 = ' guibg=#FFD787'
+let Fg223 = ' guifg=#FFD7AF' | let Bg223 = ' guibg=#FFD7AF'
+let Fg224 = ' guifg=#FFD7D7' | let Bg224 = ' guibg=#FFD7D7'
+let Fg225 = ' guifg=#FFD7FF' | let Bg225 = ' guibg=#FFD7FF'
+let Fg226 = ' guifg=#FFFF00' | let Bg226 = ' guibg=#FFFF00'
+let Fg227 = ' guifg=#FFFF5F' | let Bg227 = ' guibg=#FFFF5F'
+let Fg228 = ' guifg=#FFFF87' | let Bg228 = ' guibg=#FFFF87'
+let Fg229 = ' guifg=#FFFFAF' | let Bg229 = ' guibg=#FFFFAF'
+let Fg230 = ' guifg=#FFFFD7' | let Bg230 = ' guibg=#FFFFD7'
+let Fg231 = ' guifg=#FFFFFF' | let Bg231 = ' guibg=#FFFFFF'
+let Fg232 = ' guifg=#080808' | let Bg232 = ' guibg=#080808'
+let Fg233 = ' guifg=#121212' | let Bg233 = ' guibg=#121212'
+let Fg234 = ' guifg=#1C1C1C' | let Bg234 = ' guibg=#1C1C1C'
+let Fg235 = ' guifg=#262626' | let Bg235 = ' guibg=#262626'
+let Fg236 = ' guifg=#303030' | let Bg236 = ' guibg=#303030'
+let Fg237 = ' guifg=#3A3A3A' | let Bg237 = ' guibg=#3A3A3A'
+let Fg238 = ' guifg=#444444' | let Bg238 = ' guibg=#444444'
+let Fg239 = ' guifg=#4E4E4E' | let Bg239 = ' guibg=#4E4E4E'
+let Fg240 = ' guifg=#585858' | let Bg240 = ' guibg=#585858'
+let Fg241 = ' guifg=#626262' | let Bg241 = ' guibg=#626262'
+let Fg242 = ' guifg=#6C6C6C' | let Bg242 = ' guibg=#6C6C6C'
+let Fg243 = ' guifg=#767676' | let Bg243 = ' guibg=#767676'
+let Fg244 = ' guifg=#808080' | let Bg244 = ' guibg=#808080'
+let Fg245 = ' guifg=#8A8A8A' | let Bg245 = ' guibg=#8A8A8A'
+let Fg246 = ' guifg=#949494' | let Bg246 = ' guibg=#949494'
+let Fg247 = ' guifg=#9E9E9E' | let Bg247 = ' guibg=#9E9E9E'
+let Fg248 = ' guifg=#A8A8A8' | let Bg248 = ' guibg=#A8A8A8'
+let Fg249 = ' guifg=#B2B2B2' | let Bg249 = ' guibg=#B2B2B2'
+let Fg250 = ' guifg=#BCBCBC' | let Bg250 = ' guibg=#BCBCBC'
+let Fg251 = ' guifg=#C6C6C6' | let Bg251 = ' guibg=#C6C6C6'
+let Fg252 = ' guifg=#D0D0D0' | let Bg252 = ' guibg=#D0D0D0'
+let Fg253 = ' guifg=#DADADA' | let Bg253 = ' guibg=#DADADA'
+let Fg254 = ' guifg=#E4E4E4' | let Bg254 = ' guibg=#E4E4E4'
+let Fg255 = ' guifg=#EEEEEE' | let Bg255 = ' guibg=#EEEEEE'
 endif
 
 
 "
 " 16 Color Terminal
 "
-exe 'hi Normal'         . WhiteOnBlack
-exe 'hi Comment'        . LightBlackOnBlack
-exe 'hi TabLine'        . WhiteOnLightBlack
-exe 'hi TabLineFill'    . WhiteOnLightBlack
-exe 'hi TabLineSel'     . WhiteOnBlack
-exe 'hi LineNr'         . LightBlackOnBlack
-exe 'hi NonText'        . LightBlackOnBlack
-exe 'hi SpecialKey'     . LightBlackOnBlack
-exe 'hi ModeMsg'        . LightBlackOnBlack
-exe 'hi String'         . LightWhiteOnBlack
-exe 'hi Identifier'     . CyanOnBlack
-exe 'hi Number'         . LightYellowOnBlack
-exe 'hi Operator'       . GreenOnBlack
-exe 'hi Statement'      . GreenOnBlack
-exe 'hi Keyword'        . GreenOnBlack
-exe 'hi Type'           . LightGreenOnBlack
-exe 'hi MatchParen'     . WhiteOnLightBlack
-exe 'hi Visual'         . WhiteOnLightBlack
+exe 'hi Normal'         .WhiteOnBlack
+exe 'hi Comment'        .LightBlackOnBlack
+exe 'hi TabLine'        .WhiteOnLightBlack
+exe 'hi TabLineFill'    .WhiteOnLightBlack
+exe 'hi TabLineSel'     .WhiteOnBlack
+exe 'hi LineNr'         .LightBlackOnBlack
+exe 'hi NonText'        .LightBlackOnBlack
+exe 'hi SpecialKey'     .LightBlackOnBlack
+exe 'hi ModeMsg'        .LightBlackOnBlack
+exe 'hi String'         .LightWhiteOnBlack
+exe 'hi Identifier'     .CyanOnBlack
+exe 'hi Number'         .LightYellowOnBlack
+exe 'hi Operator'       .GreenOnBlack
+exe 'hi Statement'      .GreenOnBlack
+exe 'hi Keyword'        .GreenOnBlack
+exe 'hi Type'           .LightGreenOnBlack
+exe 'hi MatchParen'     .WhiteOnLightBlack
+exe 'hi Visual'         .WhiteOnLightBlack
 
 
 "
 " 256 Color Terminal Overrides
 "
 if &t_Co > 16
-hi Identifier       ctermfg=250                     cterm=NONE
-hi Number           ctermfg=227
-hi Operator         ctermfg=180
-hi String           ctermfg=208
-hi FoldColumn       ctermfg=250     ctermbg=238
-hi LineNr           ctermfg=237     ctermbg=235
-hi PreProc          ctermfg=97
-hi Keyword          ctermfg=71
-hi Conditional      ctermfg=71
-hi Statement        ctermfg=71
-hi Type             ctermfg=71
-hi Structure        ctermfg=68
-hi Tag              ctermfg=71
-hi xmlTagName       ctermfg=71
-hi xmlCdata         ctermfg=107
-hi xmlAttrib        ctermfg=68
-hi htmlTagName      ctermfg=71
-hi htmlArg          ctermfg=68
-hi ErrorMsg         ctermfg=9
-hi WarningMsg       ctermfg=227
-hi Folded           ctermfg=244     ctermbg=234
-hi PMenu            ctermfg=147     ctermbg=234
-hi PMenuSel                         ctermbg=234
-hi ModeMsg          ctermfg=239     ctermbg=234
-hi NonText          ctermfg=239
-hi SpecialKey       ctermfg=239
+exe 'hi Normal'                             .Bg234
+exe 'hi Comment'                            .Bg234
+exe 'hi TabLineSel'                         .Bg234
+exe 'hi LineNr'                             .Bg234
+exe 'hi NonText'                            .Bg234
+exe 'hi SpecialKey'                         .Bg234
+exe 'hi ModeMsg'                            .Bg234
+exe 'hi Identifier'     .Fg250              .Bg234
+exe 'hi Number'         .Fg227              .Bg234
+exe 'hi Operator'       .Fg180              .Bg234
+exe 'hi String'         .Fg208              .Bg234
+exe 'hi FoldColumn'     .Fg250              .Bg238
+exe 'hi PreProc'        .Fg97               .Bg234
+exe 'hi Keyword'        .Fg71               .Bg234
+exe 'hi Conditional'    .Fg71               .Bg234
+exe 'hi Statement'      .Fg71               .Bg234
+exe 'hi Type'           .Fg71               .Bg234
+exe 'hi Structure'      .Fg68               .Bg234
+exe 'hi Tag'            .Fg71               .Bg234
+exe 'hi xmlTagName'     .Fg71               .Bg234
+exe 'hi xmlCdata'       .Fg107              .Bg234
+exe 'hi xmlAttrib'      .Fg68               .Bg234
+exe 'hi htmlTagName'    .Fg71               .Bg234
+exe 'hi htmlArg'        .Fg68               .Bg234
+exe 'hi ErrorMsg'       .Fg9                .Bg234
+exe 'hi WarningMsg'     .Fg227              .Bg234
 endif
 
 
@@ -587,35 +1131,32 @@ endif
 " GUI Overrides
 "
 if has("gui_running")
-hi Comment          guifg=#99AA8A
-hi Normal           guifg=#FFFFFF   guibg=#22282A
-hi Identifier       guifg=#FFFFFF
-hi Number           guifg=#FFCD22
-hi Operator         guifg=#E8E2B7
-hi String           guifg=#EC7600
-hi FoldColumn       guifg=#FFFFFF   guibg=#394144
-hi LineNr           guifg=#3F4E49   guibg=#293134
-hi PreProc          guifg=#A082BD
-hi Keyword          guifg=#93C763
-hi Conditional      guifg=#93C763
-hi Statement        guifg=#93C763
-hi Type             guifg=#93C763
-hi Structure        guifg=#678CB1
-hi Tag              guifg=#93C763
-hi xmlTagName       guifg=#93C763
-hi xmlCdata         guifg=#99A38A
-hi xmlAttrib        guifg=#678CB1
-hi htmlTagName      guifg=#93C763
-hi htmlArg          guifg=#678CB1
-hi ErrorMsg         guifg=#FF0000
-hi WarningMsg       guifg=#FFCD22
-hi Folded           guifg=#808080   guibg=#1C2325
-hi PMenu            guifg=#CCCCFF   guibg=#1C2325
-hi PMenuSel                         guibg=#2C3335
-hi TabLine
-hi TabLineFill
-hi TabLineSel
-hi Visual           guifg=#FFFFFF   guibg=#4F6164
-hi VisualNOS        guifg=#FFFFFF   guibg=#4F6164
+exe 'hi Comment'        .' guifg=#99AA8A'
+exe 'hi Normal'         .' guifg=#FFFFFF'   .' guibg=#22282A'
+exe 'hi Identifier'     .' guifg=#FFFFFF'
+exe 'hi Number'         .' guifg=#FFCD22'
+exe 'hi Operator'       .' guifg=#E8E2B7'
+exe 'hi String'         .' guifg=#EC7600'
+exe 'hi FoldColumn'     .' guifg=#FFFFFF'   .' guibg=#394144'
+exe 'hi LineNr'         .' guifg=#3F4E49'   .' guibg=#293134'
+exe 'hi PreProc'        .' guifg=#A082BD'
+exe 'hi Keyword'        .' guifg=#93C763'
+exe 'hi Conditional'    .' guifg=#93C763'
+exe 'hi Statement'      .' guifg=#93C763'
+exe 'hi Type'           .' guifg=#93C763'
+exe 'hi Structure'      .' guifg=#678CB1'
+exe 'hi Tag'            .' guifg=#93C763'
+exe 'hi xmlTagName'     .' guifg=#93C763'
+exe 'hi xmlCdata'       .' guifg=#99A38A'
+exe 'hi xmlAttrib'      .' guifg=#678CB1'
+exe 'hi htmlTagName'    .' guifg=#93C763'
+exe 'hi htmlArg'        .' guifg=#678CB1'
+exe 'hi ErrorMsg'       .' guifg=#FF0000'
+exe 'hi WarningMsg'     .' guifg=#FFCD22'
+exe 'hi Folded'         .' guifg=#808080'   .' guibg=#1C2325'
+exe 'hi PMenu'          .' guifg=#CCCCFF'   .' guibg=#1C2325'
+exe 'hi PMenuSel'                           .' guibg=#2C3335'
+exe 'hi Visual'         .' guifg=#FFFFFF'   .' guibg=#4F6164'
+exe 'hi VisualNOS'      .' guifg=#FFFFFF'   .' guibg=#4F6164'
 endif
 
