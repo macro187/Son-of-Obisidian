@@ -37,8 +37,6 @@ if has("gui_running")
     hi Folded           guifg=#808080   guibg=#1C2325
     hi PMenu            guifg=#CCCCFF   guibg=#1C2325
     hi PMenuSel                         guibg=#2C3335
-    "hi MatchParen
-    "hi ModeMsg
     hi TabLine                                          cterm=NONE
     hi TabLineFill                                      cterm=NONE
     hi TabLineSel                                       cterm=NONE
