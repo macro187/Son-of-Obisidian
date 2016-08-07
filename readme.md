@@ -1,7 +1,11 @@
 Features
 ========
 
-Supports GUI and 256-color xterm
+Supports:
+
+- 8/16 color terminals
+- 256 color terminals
+- GUI
 
 
 
