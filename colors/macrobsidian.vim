@@ -1097,7 +1097,7 @@ exe 'hi Visual'         .WhiteOnLightBlack
 "
 " 256 Color Terminal Overrides
 "
-if &t_Co > 16
+if &t_Co > 16 || has("gui_running")
 exe 'hi Normal'                             .Bg234
 exe 'hi Comment'                            .Bg234
 exe 'hi TabLineSel'                         .Bg234
