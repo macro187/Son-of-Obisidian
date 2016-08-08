@@ -1158,5 +1158,10 @@ exe 'hi PMenu'          .' guifg=#CCCCFF'   .' guibg=#1C2325'
 exe 'hi PMenuSel'                           .' guibg=#2C3335'
 exe 'hi Visual'         .' guifg=#FFFFFF'   .' guibg=#4F6164'
 exe 'hi VisualNOS'      .' guifg=#FFFFFF'   .' guibg=#4F6164'
+exe 'hi NonText'        .' guifg=#3F4E49'   .' guibg=#22282A'
+exe 'hi ModeMsg'        .' guifg=#3F4E49'   .' guibg=#22282A'
+exe 'hi TabLine'        .' guifg=#3F4E49'   .' guibg=#293134'
+exe 'hi TabLineFill'    .' guifg=#3F4E49'   .' guibg=#293134'
+exe 'hi TabLineSel'     .' guifg=#3F4E49'   .' guibg=#22282A'
 endif
 
