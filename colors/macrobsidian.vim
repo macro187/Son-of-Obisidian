@@ -1090,7 +1090,8 @@ exe 'hi Number'         .LightYellowOnBlack
 exe 'hi Operator'       .GreenOnBlack
 exe 'hi Statement'      .GreenOnBlack
 exe 'hi Keyword'        .GreenOnBlack
-exe 'hi Type'           .LightGreenOnBlack
+exe 'hi Type'           .BlueOnBlack
+exe 'hi Structure'      .BlueOnBlack
 exe 'hi MatchParen'     .WhiteOnLightBlack
 exe 'hi Visual'         .WhiteOnLightBlack
 exe 'hi PreProc'        .LightMagentaOnBlack
@@ -1122,14 +1123,14 @@ exe 'hi FoldColumn'     .Fg250              .Bg238
 exe 'hi Keyword'        .Fg71               .Bg234
 exe 'hi Conditional'    .Fg71               .Bg234
 exe 'hi Statement'      .Fg71               .Bg234
-exe 'hi Type'           .Fg71               .Bg234
-exe 'hi Structure'      .Fg68               .Bg234
+exe 'hi Type'           .Fg67               .Bg234
+exe 'hi Structure'      .Fg67               .Bg234
 exe 'hi Tag'            .Fg71               .Bg234
 exe 'hi xmlTagName'     .Fg71               .Bg234
 exe 'hi xmlCdata'       .Fg107              .Bg234
-exe 'hi xmlAttrib'      .Fg68               .Bg234
+exe 'hi xmlAttrib'      .Fg67               .Bg234
 exe 'hi htmlTagName'    .Fg71               .Bg234
-exe 'hi htmlArg'        .Fg68               .Bg234
+exe 'hi htmlArg'        .Fg67               .Bg234
 exe 'hi ErrorMsg'       .Fg9                .Bg234
 exe 'hi WarningMsg'     .Fg227              .Bg234
 exe 'hi PreProc'        .Fg140              .Bg234              .' cterm=bold'
@@ -1158,7 +1159,7 @@ exe 'hi LineNr'         .' guifg=#3F4E49'   .' guibg=#293134'
 exe 'hi Keyword'        .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi Conditional'    .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi Statement'      .' guifg=#93C763'   .' guibg=#22282A'
-exe 'hi Type'           .' guifg=#93C763'   .' guibg=#22282A'
+exe 'hi Type'           .' guifg=#678CB1'   .' guibg=#22282A'
 exe 'hi Structure'      .' guifg=#678CB1'   .' guibg=#22282A'
 exe 'hi Tag'            .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi xmlTagName'     .' guifg=#93C763'   .' guibg=#22282A'
