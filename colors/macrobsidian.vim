@@ -1084,7 +1084,8 @@ exe 'hi NonText'        .LightBlackOnBlack
 exe 'hi SpecialKey'     .LightBlackOnBlack
 exe 'hi ModeMsg'        .LightBlackOnBlack
 exe 'hi String'         .LightWhiteOnBlack
-exe 'hi Identifier'     .CyanOnBlack
+exe 'hi Identifier'     .WhiteOnBlack
+exe 'hi Constant'       .WhiteOnBlack
 exe 'hi Number'         .LightYellowOnBlack
 exe 'hi Operator'       .GreenOnBlack
 exe 'hi Statement'      .GreenOnBlack
@@ -1112,7 +1113,8 @@ exe 'hi LineNr'                             .Bg234
 exe 'hi NonText'                            .Bg234
 exe 'hi SpecialKey'                         .Bg234
 exe 'hi ModeMsg'                            .Bg234
-exe 'hi Identifier'     .Fg250              .Bg234
+exe 'hi Identifier'                         .Bg234
+exe 'hi Constant'                           .Bg234
 exe 'hi Number'         .Fg227              .Bg234
 exe 'hi Operator'       .Fg180              .Bg234
 exe 'hi String'         .Fg208              .Bg234
@@ -1147,6 +1149,7 @@ if has("gui_running")
 exe 'hi Comment'        .' guifg=#99AA8A'   .' guibg=#22282A'
 exe 'hi Normal'         .' guifg=#FFFFFF'   .' guibg=#22282A'
 exe 'hi Identifier'     .' guifg=#FFFFFF'   .' guibg=#22282A'
+exe 'hi Constant'       .' guifg=#FFFFFF'   .' guibg=#22282A'
 exe 'hi Number'         .' guifg=#FFCD22'   .' guibg=#22282A'
 exe 'hi Operator'       .' guifg=#E8E2B7'   .' guibg=#22282A'
 exe 'hi String'         .' guifg=#EC7600'   .' guibg=#22282A'
