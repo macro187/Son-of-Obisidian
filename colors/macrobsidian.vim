@@ -1075,34 +1075,39 @@ endif
 " 16 Color Terminal
 "
 exe 'hi Normal'         .WhiteOnBlack
-exe 'hi Comment'        .LightBlackOnBlack
+exe 'hi Visual'         .WhiteOnLightBlack
+
 exe 'hi TabLine'        .WhiteOnLightBlack
 exe 'hi TabLineFill'    .WhiteOnLightBlack
 exe 'hi TabLineSel'     .WhiteOnBlack
+
 exe 'hi LineNr'         .LightBlackOnBlack
 exe 'hi NonText'        .LightBlackOnBlack
-exe 'hi SpecialKey'     .LightBlackOnBlack
 exe 'hi ModeMsg'        .LightBlackOnBlack
+exe 'hi SpecialKey'     .LightBlackOnBlack
+
+exe 'hi Comment'        .LightBlackOnBlack
+exe 'hi ps1CommentDoc'  .LightBlackOnBlack
+exe 'hi ps1CDocParam'   .LightBlackOnBlack
+
 exe 'hi String'         .LightWhiteOnBlack
+exe 'hi Number'         .LightYellowOnBlack
+exe 'hi Operator'       .WhiteOnBlack
+exe 'hi MatchParen'     .WhiteOnLightBlack
 exe 'hi Identifier'     .WhiteOnBlack
 exe 'hi Constant'       .WhiteOnBlack
-exe 'hi Number'         .LightYellowOnBlack
-exe 'hi Operator'       .GreenOnBlack
 exe 'hi Statement'      .GreenOnBlack
 exe 'hi Keyword'        .GreenOnBlack
 exe 'hi Type'           .BlueOnBlack
 exe 'hi Structure'      .BlueOnBlack
-exe 'hi MatchParen'     .WhiteOnLightBlack
-exe 'hi Visual'         .WhiteOnLightBlack
 exe 'hi PreProc'        .LightMagentaOnBlack
+
 exe 'hi markdownH1'     .LightMagentaOnBlack
 exe 'hi markdownH2'     .LightMagentaOnBlack
 exe 'hi markdownH3'     .LightMagentaOnBlack
 exe 'hi markdownH4'     .LightMagentaOnBlack
 exe 'hi markdownH5'     .LightMagentaOnBlack
 exe 'hi markdownH6'     .LightMagentaOnBlack
-hi link ps1CommentDoc Comment
-hi link ps1CDocParam Comment
 
 
 "
@@ -1110,23 +1115,31 @@ hi link ps1CDocParam Comment
 "
 if &t_Co > 16 || has("gui_running")
 exe 'hi Normal'                             .Bg234
-exe 'hi Comment'                            .Bg234
+
 exe 'hi TabLineSel'                         .Bg234
+
 exe 'hi LineNr'                             .Bg234
 exe 'hi NonText'                            .Bg234
-exe 'hi SpecialKey'                         .Bg234
 exe 'hi ModeMsg'                            .Bg234
-exe 'hi Identifier'                         .Bg234
-exe 'hi Constant'                           .Bg234
+exe 'hi SpecialKey'                         .Bg234
+
+exe 'hi Comment'                            .Bg234
+exe 'hi ps1CommentDoc'  .Fg59               .Bg234
+exe 'hi ps1CDocParam'   .Fg59               .Bg234              .' cterm=italic'
+
+exe 'hi String'         .Fg208              .Bg234
 exe 'hi Number'         .Fg227              .Bg234
 exe 'hi Operator'       .Fg180              .Bg234
-exe 'hi String'         .Fg208              .Bg234
-exe 'hi FoldColumn'     .Fg250              .Bg238
-exe 'hi Keyword'        .Fg71               .Bg234
-exe 'hi Conditional'    .Fg71               .Bg234
+exe 'hi Identifier'                         .Bg234
+exe 'hi Constant'                           .Bg234
 exe 'hi Statement'      .Fg71               .Bg234
+exe 'hi Keyword'        .Fg71               .Bg234
 exe 'hi Type'           .Fg67               .Bg234
 exe 'hi Structure'      .Fg67               .Bg234
+exe 'hi PreProc'        .Fg140              .Bg234
+
+exe 'hi FoldColumn'     .Fg250              .Bg238
+exe 'hi Conditional'    .Fg71               .Bg234
 exe 'hi Tag'            .Fg71               .Bg234
 exe 'hi xmlTagName'     .Fg71               .Bg234
 exe 'hi xmlCdata'       .Fg107              .Bg234
@@ -1135,15 +1148,13 @@ exe 'hi htmlTagName'    .Fg71               .Bg234
 exe 'hi htmlArg'        .Fg67               .Bg234
 exe 'hi ErrorMsg'       .Fg9                .Bg234
 exe 'hi WarningMsg'     .Fg227              .Bg234
-exe 'hi PreProc'        .Fg140              .Bg234              .' cterm=bold'
+
 exe 'hi markdownH1'     .Fg140              .Bg234              .' cterm=bold'
 exe 'hi markdownH2'     .Fg140              .Bg234              .' cterm=bold'
 exe 'hi markdownH3'     .Fg140              .Bg234              .' cterm=bold'
 exe 'hi markdownH4'     .Fg140              .Bg234              .' cterm=bold'
 exe 'hi markdownH5'     .Fg140              .Bg234              .' cterm=bold'
 exe 'hi markdownH6'     .Fg140              .Bg234              .' cterm=bold'
-exe 'hi ps1CommentDoc'  .Fg59               .Bg234
-exe 'hi ps1CDocParam'   .Fg59               .Bg234              .' cterm=italic'
 endif
 
 
@@ -1151,20 +1162,34 @@ endif
 " GUI Overrides
 "
 if has("gui_running")
-exe 'hi Comment'                            .' guibg=#22282A'
 exe 'hi Normal'         .' guifg=#FFFFFF'   .' guibg=#22282A'
-exe 'hi Identifier'     .' guifg=#FFFFFF'   .' guibg=#22282A'
-exe 'hi Constant'       .' guifg=#FFFFFF'   .' guibg=#22282A'
+exe 'hi Visual'         .' guifg=#FFFFFF'   .' guibg=#4F6164'
+
+exe 'hi TabLine'        .' guifg=#3F4E49'   .' guibg=#293134'
+exe 'hi TabLineFill'    .' guifg=#3F4E49'   .' guibg=#293134'
+exe 'hi TabLineSel'     .' guifg=#3F4E49'   .' guibg=#22282A'
+
+exe 'hi LineNr'         .' guifg=#3F4E49'   .' guibg=#293134'
+exe 'hi NonText'        .' guifg=#3F4E49'   .' guibg=#22282A'
+exe 'hi ModeMsg'        .' guifg=#3F4E49'   .' guibg=#22282A'
+
+exe 'hi Comment'                            .' guibg=#22282A'
+exe 'hi ps1CommentDoc'  .' guifg=#99AA8A'   .' guibg=#22282A'
+exe 'hi ps1CDocParam'   .' guifg=#99AA8A'   .' guibg=#22282A'   .' gui=italic'
+
+exe 'hi String'         .' guifg=#EC7600'   .' guibg=#22282A'
 exe 'hi Number'         .' guifg=#FFCD22'   .' guibg=#22282A'
 exe 'hi Operator'       .' guifg=#E8E2B7'   .' guibg=#22282A'
-exe 'hi String'         .' guifg=#EC7600'   .' guibg=#22282A'
-exe 'hi FoldColumn'     .' guifg=#FFFFFF'   .' guibg=#394144'
-exe 'hi LineNr'         .' guifg=#3F4E49'   .' guibg=#293134'
-exe 'hi Keyword'        .' guifg=#93C763'   .' guibg=#22282A'
-exe 'hi Conditional'    .' guifg=#93C763'   .' guibg=#22282A'
+exe 'hi Identifier'     .' guifg=#FFFFFF'   .' guibg=#22282A'
+exe 'hi Constant'       .' guifg=#FFFFFF'   .' guibg=#22282A'
 exe 'hi Statement'      .' guifg=#93C763'   .' guibg=#22282A'
+exe 'hi Keyword'        .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi Type'           .' guifg=#678CB1'   .' guibg=#22282A'
 exe 'hi Structure'      .' guifg=#678CB1'   .' guibg=#22282A'
+exe 'hi PreProc'                            .' guibg=#22282A'
+
+exe 'hi FoldColumn'     .' guifg=#FFFFFF'   .' guibg=#394144'
+exe 'hi Conditional'    .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi Tag'            .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi xmlTagName'     .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi xmlCdata'       .' guifg=#99A38A'   .' guibg=#22282A'
@@ -1176,21 +1201,13 @@ exe 'hi WarningMsg'     .' guifg=#FFCD22'   .' guibg=#22282A'
 exe 'hi Folded'         .' guifg=#808080'   .' guibg=#1C2325'
 exe 'hi PMenu'          .' guifg=#CCCCFF'   .' guibg=#1C2325'
 exe 'hi PMenuSel'                           .' guibg=#2C3335'
-exe 'hi Visual'         .' guifg=#FFFFFF'   .' guibg=#4F6164'
 exe 'hi VisualNOS'      .' guifg=#FFFFFF'   .' guibg=#4F6164'
-exe 'hi NonText'        .' guifg=#3F4E49'   .' guibg=#22282A'
-exe 'hi ModeMsg'        .' guifg=#3F4E49'   .' guibg=#22282A'
-exe 'hi TabLine'        .' guifg=#3F4E49'   .' guibg=#293134'
-exe 'hi TabLineFill'    .' guifg=#3F4E49'   .' guibg=#293134'
-exe 'hi TabLineSel'     .' guifg=#3F4E49'   .' guibg=#22282A'
-exe 'hi PreProc'                            .' guibg=#22282A'
+
 exe 'hi markdownH1'                         .' guibg=#22282A'   .' gui=bold'
 exe 'hi markdownH2'                         .' guibg=#22282A'   .' gui=bold'
 exe 'hi markdownH3'                         .' guibg=#22282A'   .' gui=bold'
 exe 'hi markdownH4'                         .' guibg=#22282A'   .' gui=bold'
 exe 'hi markdownH5'                         .' guibg=#22282A'   .' gui=bold'
 exe 'hi markdownH6'                         .' guibg=#22282A'   .' gui=bold'
-exe 'hi ps1CommentDoc'  .' guifg=#99AA8A'   .' guibg=#22282A'
-exe 'hi ps1CDocParam'   .' guifg=#99AA8A'   .' guibg=#22282A'   .' gui=italic'
 endif
 
