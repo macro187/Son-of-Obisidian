@@ -1098,6 +1098,7 @@ exe 'hi Identifier'     .WhiteOnBlack
 exe 'hi Constant'       .WhiteOnBlack
 exe 'hi Statement'      .GreenOnBlack
 exe 'hi Keyword'        .GreenOnBlack
+exe 'hi StorageClass'   .GreenOnBlack
 exe 'hi Type'           .BlueOnBlack
 exe 'hi Structure'      .BlueOnBlack
 exe 'hi PreProc'        .LightMagentaOnBlack
@@ -1134,6 +1135,7 @@ exe 'hi Identifier'                         .Bg234
 exe 'hi Constant'                           .Bg234
 exe 'hi Statement'      .Fg71               .Bg234
 exe 'hi Keyword'        .Fg71               .Bg234
+exe 'hi StorageClass'   .Fg71               .Bg234
 exe 'hi Type'           .Fg67               .Bg234
 exe 'hi Structure'      .Fg67               .Bg234
 exe 'hi PreProc'        .Fg140              .Bg234
@@ -1183,6 +1185,7 @@ exe 'hi Operator'       .' guifg=#E8E2B7'   .' guibg=#22282A'
 exe 'hi Identifier'     .' guifg=#FFFFFF'   .' guibg=#22282A'
 exe 'hi Constant'       .' guifg=#FFFFFF'   .' guibg=#22282A'
 exe 'hi Statement'      .' guifg=#93C763'   .' guibg=#22282A'
+exe 'hi StorageClass'   .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi Keyword'        .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi Type'           .' guifg=#678CB1'   .' guibg=#22282A'
 exe 'hi Structure'      .' guifg=#678CB1'   .' guibg=#22282A'
