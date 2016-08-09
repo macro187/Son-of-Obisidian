@@ -1082,8 +1082,8 @@ exe 'hi TabLineFill'    .WhiteOnLightBlack
 exe 'hi TabLineSel'     .WhiteOnBlack
 
 exe 'hi LineNr'         .LightBlackOnBlack
-exe 'hi NonText'        .LightBlackOnBlack
 exe 'hi ModeMsg'        .LightBlackOnBlack
+exe 'hi NonText'        .LightBlackOnBlack
 exe 'hi SpecialKey'     .LightBlackOnBlack
 
 exe 'hi Comment'        .LightBlackOnBlack
@@ -1120,8 +1120,8 @@ exe 'hi Normal'                             .Bg234
 exe 'hi TabLineSel'                         .Bg234
 
 exe 'hi LineNr'                             .Bg234
-exe 'hi NonText'                            .Bg234
 exe 'hi ModeMsg'                            .Bg234
+exe 'hi NonText'                            .Bg234
 exe 'hi SpecialKey'                         .Bg234
 
 exe 'hi Comment'                            .Bg234
@@ -1172,8 +1172,9 @@ exe 'hi TabLineFill'    .' guifg=#3F4E49'   .' guibg=#293134'
 exe 'hi TabLineSel'     .' guifg=#3F4E49'   .' guibg=#22282A'
 
 exe 'hi LineNr'         .' guifg=#3F4E49'   .' guibg=#293134'
-exe 'hi NonText'        .' guifg=#3F4E49'   .' guibg=#22282A'
 exe 'hi ModeMsg'        .' guifg=#3F4E49'   .' guibg=#22282A'
+exe 'hi NonText'        .' guifg=#3F4E49'   .' guibg=#22282A'
+exe 'hi SpecialKey'     .' guifg=#3F4E49'   .' guibg=#22282A'
 
 exe 'hi Comment'                            .' guibg=#22282A'
 exe 'hi ps1CommentDoc'  .' guifg=#99AA8A'   .' guibg=#22282A'
