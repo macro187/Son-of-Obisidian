@@ -1115,7 +1115,7 @@ exe 'hi markdownH6'     .LightMagentaOnBlack
 " 256 Color Terminal Overrides
 "
 if &t_Co > 16 || has("gui_running")
-exe 'hi Normal'                             .Bg234
+exe 'hi Normal'         .Fg253              .Bg234
 
 exe 'hi TabLineSel'                         .Bg234
 
@@ -1131,8 +1131,8 @@ exe 'hi ps1CDocParam'   .Fg59               .Bg234              .' cterm=italic'
 exe 'hi String'         .Fg208              .Bg234
 exe 'hi Number'         .Fg227              .Bg234
 exe 'hi Operator'       .Fg180              .Bg234
-exe 'hi Identifier'                         .Bg234
-exe 'hi Constant'                           .Bg234
+exe 'hi Identifier'     .Fg253              .Bg234
+exe 'hi Constant'       .Fg253              .Bg234
 exe 'hi Statement'      .Fg71               .Bg234
 exe 'hi Keyword'        .Fg71               .Bg234
 exe 'hi StorageClass'   .Fg71               .Bg234
@@ -1164,8 +1164,8 @@ endif
 " GUI Overrides
 "
 if has("gui_running")
-exe 'hi Normal'         .' guifg=#FFFFFF'   .' guibg=#22282A'
-exe 'hi Visual'         .' guifg=#FFFFFF'   .' guibg=#4F6164'
+exe 'hi Normal'                             .' guibg=#22282A'
+exe 'hi Visual'                             .' guibg=#4F6164'
 
 exe 'hi TabLine'        .' guifg=#3F4E49'   .' guibg=#293134'
 exe 'hi TabLineFill'    .' guifg=#3F4E49'   .' guibg=#293134'
@@ -1183,8 +1183,8 @@ exe 'hi ps1CDocParam'   .' guifg=#99AA8A'   .' guibg=#22282A'   .' gui=italic'
 exe 'hi String'         .' guifg=#EC7600'   .' guibg=#22282A'
 exe 'hi Number'         .' guifg=#FFCD22'   .' guibg=#22282A'
 exe 'hi Operator'       .' guifg=#E8E2B7'   .' guibg=#22282A'
-exe 'hi Identifier'     .' guifg=#FFFFFF'   .' guibg=#22282A'
-exe 'hi Constant'       .' guifg=#FFFFFF'   .' guibg=#22282A'
+exe 'hi Identifier'                         .' guibg=#22282A'
+exe 'hi Constant'                           .' guibg=#22282A'
 exe 'hi Statement'      .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi StorageClass'   .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi Keyword'        .' guifg=#93C763'   .' guibg=#22282A'
@@ -1192,7 +1192,7 @@ exe 'hi Type'           .' guifg=#678CB1'   .' guibg=#22282A'
 exe 'hi Structure'      .' guifg=#678CB1'   .' guibg=#22282A'
 exe 'hi PreProc'                            .' guibg=#22282A'
 
-exe 'hi FoldColumn'     .' guifg=#FFFFFF'   .' guibg=#394144'
+exe 'hi FoldColumn'                         .' guibg=#394144'
 exe 'hi Conditional'    .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi Tag'            .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi xmlTagName'     .' guifg=#93C763'   .' guibg=#22282A'
@@ -1205,7 +1205,7 @@ exe 'hi WarningMsg'     .' guifg=#FFCD22'   .' guibg=#22282A'
 exe 'hi Folded'         .' guifg=#808080'   .' guibg=#1C2325'
 exe 'hi PMenu'          .' guifg=#CCCCFF'   .' guibg=#1C2325'
 exe 'hi PMenuSel'                           .' guibg=#2C3335'
-exe 'hi VisualNOS'      .' guifg=#FFFFFF'   .' guibg=#4F6164'
+exe 'hi VisualNOS'                          .' guibg=#4F6164'
 
 exe 'hi markdownH1'                         .' guibg=#22282A'   .' gui=bold'
 exe 'hi markdownH2'                         .' guibg=#22282A'   .' gui=bold'
