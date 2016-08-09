@@ -1142,8 +1142,8 @@ exe 'hi markdownH3'     .Fg140              .Bg234              .' cterm=bold'
 exe 'hi markdownH4'     .Fg140              .Bg234              .' cterm=bold'
 exe 'hi markdownH5'     .Fg140              .Bg234              .' cterm=bold'
 exe 'hi markdownH6'     .Fg140              .Bg234              .' cterm=bold'
-exe 'hi ps1CommentDoc'  .Fg71               .Bg234
-exe 'hi ps1CDocParam'   .Fg71               .Bg234              .' cterm=italic'
+exe 'hi ps1CommentDoc'  .Fg59               .Bg234
+exe 'hi ps1CDocParam'   .Fg59               .Bg234              .' cterm=italic'
 endif
 
 
@@ -1151,7 +1151,7 @@ endif
 " GUI Overrides
 "
 if has("gui_running")
-exe 'hi Comment'        .' guifg=#99AA8A'   .' guibg=#22282A'
+exe 'hi Comment'                            .' guibg=#22282A'
 exe 'hi Normal'         .' guifg=#FFFFFF'   .' guibg=#22282A'
 exe 'hi Identifier'     .' guifg=#FFFFFF'   .' guibg=#22282A'
 exe 'hi Constant'       .' guifg=#FFFFFF'   .' guibg=#22282A'
@@ -1190,7 +1190,7 @@ exe 'hi markdownH3'                         .' guibg=#22282A'   .' gui=bold'
 exe 'hi markdownH4'                         .' guibg=#22282A'   .' gui=bold'
 exe 'hi markdownH5'                         .' guibg=#22282A'   .' gui=bold'
 exe 'hi markdownH6'                         .' guibg=#22282A'   .' gui=bold'
-exe 'hi ps1CommentDoc'  .' guifg=#93C763'   .' guibg=#22282A'
-exe 'hi ps1CDocParam'   .' guifg=#93C763'   .' guibg=#22282A'   .' gui=italic'
+exe 'hi ps1CommentDoc'  .' guifg=#99AA8A'   .' guibg=#22282A'
+exe 'hi ps1CDocParam'   .' guifg=#99AA8A'   .' guibg=#22282A'   .' gui=italic'
 endif
 
