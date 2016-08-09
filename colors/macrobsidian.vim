@@ -1092,6 +1092,13 @@ exe 'hi Keyword'        .GreenOnBlack
 exe 'hi Type'           .LightGreenOnBlack
 exe 'hi MatchParen'     .WhiteOnLightBlack
 exe 'hi Visual'         .WhiteOnLightBlack
+exe 'hi PreProc'        .LightMagentaOnBlack
+exe 'hi markdownH1'     .LightMagentaOnBlack
+exe 'hi markdownH2'     .LightMagentaOnBlack
+exe 'hi markdownH3'     .LightMagentaOnBlack
+exe 'hi markdownH4'     .LightMagentaOnBlack
+exe 'hi markdownH5'     .LightMagentaOnBlack
+exe 'hi markdownH6'     .LightMagentaOnBlack
 
 
 "
@@ -1110,7 +1117,6 @@ exe 'hi Number'         .Fg227              .Bg234
 exe 'hi Operator'       .Fg180              .Bg234
 exe 'hi String'         .Fg208              .Bg234
 exe 'hi FoldColumn'     .Fg250              .Bg238
-exe 'hi PreProc'        .Fg97               .Bg234
 exe 'hi Keyword'        .Fg71               .Bg234
 exe 'hi Conditional'    .Fg71               .Bg234
 exe 'hi Statement'      .Fg71               .Bg234
@@ -1124,6 +1130,13 @@ exe 'hi htmlTagName'    .Fg71               .Bg234
 exe 'hi htmlArg'        .Fg68               .Bg234
 exe 'hi ErrorMsg'       .Fg9                .Bg234
 exe 'hi WarningMsg'     .Fg227              .Bg234
+exe 'hi PreProc'        .Fg140              .Bg234              .' cterm=bold'
+exe 'hi markdownH1'     .Fg140              .Bg234              .' cterm=bold'
+exe 'hi markdownH2'     .Fg140              .Bg234              .' cterm=bold'
+exe 'hi markdownH3'     .Fg140              .Bg234              .' cterm=bold'
+exe 'hi markdownH4'     .Fg140              .Bg234              .' cterm=bold'
+exe 'hi markdownH5'     .Fg140              .Bg234              .' cterm=bold'
+exe 'hi markdownH6'     .Fg140              .Bg234              .' cterm=bold'
 endif
 
 
@@ -1139,7 +1152,6 @@ exe 'hi Operator'       .' guifg=#E8E2B7'   .' guibg=#22282A'
 exe 'hi String'         .' guifg=#EC7600'   .' guibg=#22282A'
 exe 'hi FoldColumn'     .' guifg=#FFFFFF'   .' guibg=#394144'
 exe 'hi LineNr'         .' guifg=#3F4E49'   .' guibg=#293134'
-exe 'hi PreProc'        .' guifg=#A082BD'   .' guibg=#22282A'
 exe 'hi Keyword'        .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi Conditional'    .' guifg=#93C763'   .' guibg=#22282A'
 exe 'hi Statement'      .' guifg=#93C763'   .' guibg=#22282A'
@@ -1163,5 +1175,12 @@ exe 'hi ModeMsg'        .' guifg=#3F4E49'   .' guibg=#22282A'
 exe 'hi TabLine'        .' guifg=#3F4E49'   .' guibg=#293134'
 exe 'hi TabLineFill'    .' guifg=#3F4E49'   .' guibg=#293134'
 exe 'hi TabLineSel'     .' guifg=#3F4E49'   .' guibg=#22282A'
+exe 'hi PreProc'                            .' guibg=#22282A'
+exe 'hi markdownH1'                         .' guibg=#22282A'   .' gui=bold'
+exe 'hi markdownH2'                         .' guibg=#22282A'   .' gui=bold'
+exe 'hi markdownH3'                         .' guibg=#22282A'   .' gui=bold'
+exe 'hi markdownH4'                         .' guibg=#22282A'   .' gui=bold'
+exe 'hi markdownH5'                         .' guibg=#22282A'   .' gui=bold'
+exe 'hi markdownH6'                         .' guibg=#22282A'   .' gui=bold'
 endif
 
