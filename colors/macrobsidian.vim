@@ -1101,6 +1101,8 @@ exe 'hi markdownH3'     .LightMagentaOnBlack
 exe 'hi markdownH4'     .LightMagentaOnBlack
 exe 'hi markdownH5'     .LightMagentaOnBlack
 exe 'hi markdownH6'     .LightMagentaOnBlack
+hi link ps1CommentDoc Comment
+hi link ps1CDocParam Comment
 
 
 "
@@ -1140,6 +1142,8 @@ exe 'hi markdownH3'     .Fg140              .Bg234              .' cterm=bold'
 exe 'hi markdownH4'     .Fg140              .Bg234              .' cterm=bold'
 exe 'hi markdownH5'     .Fg140              .Bg234              .' cterm=bold'
 exe 'hi markdownH6'     .Fg140              .Bg234              .' cterm=bold'
+exe 'hi ps1CommentDoc'  .Fg71               .Bg234
+exe 'hi ps1CDocParam'   .Fg71               .Bg234              .' cterm=italic'
 endif
 
 
@@ -1186,5 +1190,7 @@ exe 'hi markdownH3'                         .' guibg=#22282A'   .' gui=bold'
 exe 'hi markdownH4'                         .' guibg=#22282A'   .' gui=bold'
 exe 'hi markdownH5'                         .' guibg=#22282A'   .' gui=bold'
 exe 'hi markdownH6'                         .' guibg=#22282A'   .' gui=bold'
+exe 'hi ps1CommentDoc'  .' guifg=#93C763'   .' guibg=#22282A'
+exe 'hi ps1CDocParam'   .' guifg=#93C763'   .' guibg=#22282A'   .' gui=italic'
 endif
 
