@@ -1081,6 +1081,7 @@ exe 'hi TabLine'        .WhiteOnLightBlack
 exe 'hi TabLineFill'    .WhiteOnLightBlack
 exe 'hi TabLineSel'     .WhiteOnBlack
 
+exe 'hi SignColumn'     .LightBlackOnBlack
 exe 'hi LineNr'         .LightBlackOnBlack
 exe 'hi ModeMsg'        .LightBlackOnBlack
 exe 'hi NonText'        .LightBlackOnBlack
@@ -1119,6 +1120,7 @@ exe 'hi Normal'         .Fg253              .Bg234
 
 exe 'hi TabLineSel'                         .Bg234
 
+exe 'hi SignColumn'                         .Bg234
 exe 'hi LineNr'                             .Bg234
 exe 'hi ModeMsg'                            .Bg234
 exe 'hi NonText'                            .Bg234
@@ -1171,6 +1173,7 @@ exe 'hi TabLine'        .' guifg=#3F4E49'   .' guibg=#293134'
 exe 'hi TabLineFill'    .' guifg=#3F4E49'   .' guibg=#293134'
 exe 'hi TabLineSel'     .' guifg=#3F4E49'   .' guibg=#22282A'
 
+exe 'hi SignColumn'     .' guifg=#3F4E49'   .' guibg=#293134'
 exe 'hi LineNr'         .' guifg=#3F4E49'   .' guibg=#293134'
 exe 'hi ModeMsg'        .' guifg=#3F4E49'   .' guibg=#22282A'
 exe 'hi NonText'        .' guifg=#3F4E49'   .' guibg=#22282A'
