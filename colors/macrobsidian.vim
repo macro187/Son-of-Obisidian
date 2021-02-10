@@ -1087,6 +1087,11 @@ exe 'hi ModeMsg'        .LightBlackOnBlack
 exe 'hi NonText'        .LightBlackOnBlack
 exe 'hi SpecialKey'     .LightBlackOnBlack
 
+exe 'hi Pmenu'          .WhiteOnLightBlack
+exe 'hi PmenuSel'       .LightWhiteOnWhite
+exe 'hi PmenuSbar'      .WhiteOnLightBlack
+exe 'hi PmenuThumb'     .LightWhiteOnWhite
+
 exe 'hi Comment'        .LightBlackOnBlack
 exe 'hi ps1CommentDoc'  .LightBlackOnBlack
 exe 'hi ps1CDocParam'   .LightBlackOnBlack
